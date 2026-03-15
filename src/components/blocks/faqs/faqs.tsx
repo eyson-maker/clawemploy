@@ -55,7 +55,7 @@ export default function FaqSection() {
   ];
 
   return (
-    <section id="faqs" className="px-4 py-16">
+    <section id="faqs" className="px-4 py-24">
       <div className="mx-auto max-w-4xl">
         <HeaderSection
           title={t('title')}
@@ -74,7 +74,7 @@ export default function FaqSection() {
               <AccordionItem
                 key={item.id}
                 value={item.id}
-                className="border-dashed"
+                className="border-dashed py-1"
               >
                 <AccordionTrigger className="cursor-pointer text-base hover:no-underline">
                   {item.question}

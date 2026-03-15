@@ -27,7 +27,7 @@ const transitionVariants = {
 
 export default function HeroSection() {
   const t = useTranslations('HomePage.hero');
-  const linkIntroduction = 'https://github.com/anthropics/openclaw';
+  const linkIntroduction = '/waitlist';
   const linkPrimary = '/waitlist';
   const linkSecondary = '/#agents';
 
@@ -35,13 +35,13 @@ export default function HeroSection() {
     <main id="hero" className="relative overflow-hidden">
       {/* gradient background orbs */}
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,hsla(245,60%,50%,.15)_0%,hsla(245,60%,50%,.05)_40%,transparent_70%)]" />
-        <div className="absolute -top-20 left-1/4 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,hsla(270,60%,50%,.1)_0%,transparent_60%)]" />
-        <div className="absolute top-20 right-1/4 h-[300px] w-[500px] translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,hsla(220,60%,50%,.08)_0%,transparent_60%)]" />
+        <div className="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,hsla(235,70%,55%,.12)_0%,hsla(235,70%,55%,.04)_40%,transparent_70%)]" />
+        <div className="absolute -top-20 left-1/4 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,hsla(250,60%,55%,.08)_0%,transparent_60%)]" />
+        <div className="absolute top-20 right-1/4 h-[300px] w-[500px] translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,hsla(225,65%,55%,.06)_0%,transparent_60%)]" />
       </div>
 
       <section className="relative">
-        <div className="pt-24 pb-32">
+        <div className="pt-32 pb-40">
           <div className="mx-auto max-w-4xl px-6">
             <div className="text-center">
               {/* introduction badge */}

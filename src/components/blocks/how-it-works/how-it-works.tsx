@@ -26,7 +26,7 @@ export default function HowItWorksSection() {
   const t = useTranslations('HomePage.howItWorks');
 
   return (
-    <section id="how-it-works" className="px-4 py-20 bg-muted/20">
+    <section id="how-it-works" className="px-4 py-28 bg-muted/20">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 max-w-2xl">
           <span className="text-primary mb-3 block font-mono text-sm font-semibold uppercase tracking-wider">
@@ -50,7 +50,7 @@ export default function HowItWorksSection() {
                 </div>
               )}
 
-              <div className="flex h-full flex-col rounded-xl border border-border/50 bg-card/30 p-8 transition-colors hover:bg-card/60">
+              <div className="flex h-full flex-col rounded-2xl border border-border/50 bg-card p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-card/80">
                 <div className={`mb-4 flex size-12 items-center justify-center rounded-lg ${step.color}`}>
                   <step.icon className="size-6" />
                 </div>

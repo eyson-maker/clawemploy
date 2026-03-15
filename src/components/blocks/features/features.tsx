@@ -30,7 +30,7 @@ export default function FeaturesSection() {
           {features.map(({ key, icon: Icon, color }) => (
             <div
               key={key}
-              className="rounded-xl border border-border/50 bg-card/30 p-8 transition-colors hover:bg-card/60"
+              className="rounded-2xl border border-border/50 bg-card p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-card/80"
             >
               <div className={`mb-4 flex size-12 items-center justify-center rounded-lg ${color}`}>
                 <Icon className="size-6" />

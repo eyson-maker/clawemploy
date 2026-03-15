@@ -40,7 +40,7 @@ export default function AgentGridSection() {
           {agents.map(({ key, icon: Icon, color }) => (
             <div
               key={key}
-              className="group relative rounded-xl border border-border/50 bg-card/30 p-6 transition-all duration-300 hover:border-primary/40 hover:bg-card/80"
+              className="group relative rounded-2xl border border-border/50 bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 hover:bg-card/80"
             >
               {/* tag */}
               <span className="mb-4 inline-block rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-muted-foreground">
