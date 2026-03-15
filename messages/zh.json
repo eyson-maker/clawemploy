@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "MkSaaS Demo",
-    "title": "MkSaaS - 最好的 AI SaaS 模板",
-    "description": "MkSaaS 是构建 AI SaaS 的最佳模板，使用 MkSaaS 可以在几天内轻松构建您的 AI SaaS，简单且毫不费力。"
+    "name": "ClawEmploy",
+    "title": "ClawEmploy - 雇佣 AI 专家，而非员工",
+    "description": "为独立开发者和超级个体打造的预配置 AI Agent 服务，涵盖调研、SEO、测试和项目管理。基于 OpenClaw 构建。"
   },
   "Common": {
     "premium": "付费文章",
@@ -143,12 +143,12 @@
   },
   "AboutPage": {
     "title": "关于我们",
-    "description": "MkSaaS 是一个使用最先进的技术栈构建的 AI SaaS 模板，它可以帮助你更快更好地构建你的 SaaS。如果你有任何问题，欢迎联系我。",
-    "authorName": "MkSaaS",
-    "authorBio": "最好的 AI SaaS 模板",
-    "introduction": "👋 你好，这里是 MkSaaS，一个使用最先进的技术栈构建的 AI SaaS 模板，它可以帮助你更快更好地构建你的 SaaS。如果你有任何问题，欢迎联系我。",
-    "talkWithMe": "联系我",
-    "followMe": "关注我"
+    "description": "ClawEmploy 为独立开发者和超级个体提供预配置的 AI Agent 服务。",
+    "authorName": "ClawEmploy",
+    "authorBio": "AI Agent 即服务",
+    "introduction": "ClawEmploy 是一个为独立开发者和超级个体打造的 AI Agent 平台。我们提供预配置的专家级 AI Agent，帮助你自动化日常工作——从市场调研、SEO 到测试和项目管理。基于开源 OpenClaw 框架构建。",
+    "talkWithMe": "联系我们",
+    "followMe": "关注我们"
   },
   "ChangelogPage": {
     "title": "更新日志",
@@ -183,11 +183,11 @@
   },
   "WaitlistPage": {
     "title": "等待队列",
-    "description": "加入等待队列，及时获取最新消息和更新",
-    "subtitle": "加入等待队列，及时获取最新消息和更新",
+    "description": "加入等待列表，率先部署 AI Agent",
+    "subtitle": "加入等待列表，率先部署 AI Agent",
     "form": {
-      "title": "加入等待队列",
-      "description": "我们将在产品发布时及时通知您",
+      "title": "加入等待列表",
+      "description": "率先部署真正能干活的 AI Agent",
       "email": "邮箱",
       "subscribe": "加入等待队列",
       "subscribing": "加入等待队列中...",
@@ -198,8 +198,8 @@
   },
   "Newsletter": {
     "title": "邮件列表",
-    "subtitle": "加入我们的社区",
-    "description": "订阅邮件列表，及时获取最新消息和更新",
+    "subtitle": "保持关注",
+    "description": "获取新 Agent、新功能和早期访问机会的最新消息",
     "form": {
       "email": "邮箱",
       "subscribe": "订阅",
@@ -296,7 +296,7 @@
     "previousPage": "上一页",
     "nextPage": "下一页",
     "chooseLanguage": "选择语言",
-    "title": "MkSaaS文档",
+    "title": "ClawEmploy文档",
     "homepage": "首页"
   },
   "PremiumContent": {
@@ -315,7 +315,7 @@
   "Marketing": {
     "navbar": {
       "features": {
-        "title": "功能"
+        "title": "Agent"
       },
       "pricing": {
         "title": "价格"
@@ -449,7 +449,7 @@
       }
     },
     "footer": {
-      "tagline": "使用 MkSaaS 在几天内轻松构建您的 AI SaaS",
+      "tagline": "雇佣 AI 专家，而非员工",
       "product": {
         "title": "产品",
         "items": {
@@ -789,17 +789,17 @@
     }
   },
   "HomePage": {
-    "title": "MkSaaS",
-    "description": "使用 MkSaaS 在几天内轻松构建您的 AI SaaS 产品",
+    "title": "ClawEmploy",
+    "description": "为独立开发者和超级个体打造的预配置 AI Agent",
     "hero": {
-      "title": "使用 MkSaaS 轻松构建您的 AI SaaS 产品",
-      "description": "MkSaaS 是构建 AI SaaS 的最佳模板，内置 AI、身份验证、全球支付、博客、文档、邮件订阅、SEO、多彩主题、丰富组件等。",
-      "introduction": "介绍 MkSaaS 模板",
-      "primary": "开始使用",
-      "secondary": "查看演示"
+      "title": "雇佣 AI 专家，而非员工",
+      "description": "预配置的 AI Agent，覆盖市场调研、SEO 优化、自动化测试和项目管理。基于 OpenClaw 构建，按需付费。",
+      "introduction": "基于 OpenClaw 构建",
+      "primary": "加入等待列表",
+      "secondary": "查看 Agent"
     },
     "logocloud": {
-      "title": "您最爱公司都是我们的合作伙伴"
+      "title": "与你已经在用的平台无缝集成"
     },
     "integration": {
       "title": "集成",
@@ -840,25 +840,25 @@
       "secondaryButton": "查看演示"
     },
     "features": {
-      "title": "功能",
-      "subtitle": "您的 SaaS 产品功能",
-      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "title": "为什么选择 ClawEmploy？",
+      "subtitle": "专为独立开发者打造",
+      "description": "无需招聘即可扩展的一切所需",
       "items": {
         "item-1": {
-          "title": "产品特色功能一",
-          "description": "请在这里详细描述您的产品特色功能一，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "预配置专家",
+          "description": "每个 Agent 都预置了领域专业知识，无需提示词工程——部署即用。"
         },
         "item-2": {
-          "title": "产品特色功能二",
-          "description": "请在这里详细描述您的产品特色功能二，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "按需付费",
+          "description": "没有工资，没有合同。只为 Agent 完成的任务付费，随时扩缩容。"
         },
         "item-3": {
-          "title": "产品特色功能三",
-          "description": "请在这里详细描述您的产品特色功能三，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "多平台支持",
+          "description": "你的 Agent 可在 Telegram、Discord、Slack、GitHub 等平台工作。一个面板管理所有。"
         },
         "item-4": {
-          "title": "产品特色功能四",
-          "description": "请在这里详细描述您的产品特色功能四，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "基于 OpenClaw",
+          "description": "开源基础意味着完全透明、社区驱动的改进，以及零厂商锁定。"
         }
       }
     },
@@ -912,126 +912,128 @@
       "subtitle": "如果您有任何问题，请随时联系我们",
       "items": {
         "item-1": {
-          "question": "你们提供免费试用吗？",
-          "answer": "是的，我们提供7天的免费试用。"
+          "question": "什么是 ClawEmploy？",
+          "answer": "ClawEmploy 提供预配置的 AI Agent，处理市场调研、SEO 优化、自动化测试和内容创作等专业任务。可以理解为雇佣 AI 驱动的专家自由职业者——全天候可用，成本仅为人力的零头。"
         },
         "item-2": {
-          "question": "如何取消我的订阅？",
-          "answer": "您可以通过访问账单页面取消您的订阅。"
+          "question": "与雇佣自由职业者有什么区别？",
+          "answer": "与自由职业者不同，我们的 AI Agent 全天候工作，交付质量稳定，几分钟内即可部署。不需要面试、不需要入职培训、不会错过截止日期。而且只按使用量付费。"
         },
         "item-3": {
-          "question": "我可以更改我的计划吗？",
-          "answer": "是的，您可以随时通过访问账单页面更改您的计划。"
+          "question": "Agent 可以在哪些平台工作？",
+          "answer": "我们的 Agent 集成了 Telegram、Discord、Slack、GitHub 等平台。它们可以监控频道、回复消息、创建 Pull Request，并在你现有的工具中自动化工作流程。"
         },
         "item-4": {
-          "question": "你们的退款政策是什么？",
-          "answer": "是的，我们提供30天的退款保证。"
+          "question": "费用是多少？",
+          "answer": "我们采用按需付费模式。只为 Agent 完成的任务付费，无需月度订阅（团队可享受批量折扣）。加入等待列表获取早期访问价格。"
         },
         "item-5": {
-          "question": "找不到您想问的问题？",
-          "answer": "请联系我们的客户支持团队，邮箱地址：support@mksaas.com"
+          "question": "我的数据安全吗？",
+          "answer": "绝对安全。我们使用企业级加密，你的数据不会被用于模型训练。每个 Agent 都在隔离环境中运行。我们基于开源 OpenClaw 框架构建，你可以自行审计代码。"
         }
       }
     },
     "testimonials": {
-      "title": "客户评价",
-      "subtitle": "我们的客户对我们的评价",
+      "title": "用户评价",
+      "subtitle": "我们的用户怎么说",
       "items": {
         "item-1": {
-          "name": "Jonathan Yombo",
-          "role": "软件工程师",
+          "name": "即将推出",
+          "role": "早期用户",
           "image": "https://randomuser.me/api/portraits/men/1.jpg",
-          "quote": "MkSaaS 非常出色且实用，无需费心，一个真正的金矿。"
+          "quote": "加入等待列表，成为首批体验 ClawEmploy 的用户。"
         },
         "item-2": {
-          "name": "Yves Kalume",
-          "role": "Android GDE",
-          "image": "https://randomuser.me/api/portraits/men/6.jpg",
-          "quote": "没有网页设计经验，我只需几分钟就可以用 Tailwindcss 重新设计我的整个网站，感谢 MkSaaS。"
+          "name": "即将推出",
+          "role": "早期用户",
+          "image": "https://randomuser.me/api/portraits/men/2.jpg",
+          "quote": "我们正在接纳首批用户，敬请期待真实评价。"
         },
         "item-3": {
-          "name": "Yucel Faruksahan",
-          "role": "Tailkits 创建者",
-          "image": "https://randomuser.me/api/portraits/men/7.jpg",
-          "quote": "MkSaaS 模板做得很好，这是我见过最好的 SaaS 模板，没有之一 :)"
-        },
-        "item-4": {
-          "name": "Anonymous author",
-          "role": "产品经理",
-          "image": "https://randomuser.me/api/portraits/men/8.jpg",
-          "quote": "我不熟悉 Tailwind，我想自己做一些页面，我在网上搜索了很多英雄页面和区块。然而，大多数都没有给我一个清晰的想法，或者需要一些 HTML/CSS 编码背景来从原始文件中做一些更改，或者太贵了。我下载了其中一个 MkSaaS 模板，它非常容易理解，你可以在开始时修改代码/区块以完美地适应你的页面目的。"
-        },
-        "item-5": {
-          "name": "Shekinah Tshiokufila",
-          "role": "高级软件工程师",
-          "image": "https://randomuser.me/api/portraits/men/4.jpg",
-          "quote": "MkSaaS 正在重新定义网页设计标准，这些区块为那些喜欢美丽但可能缺乏时间实现它的人提供了简单且高效的方式。我只能推荐这个不可思议的奇迹。"
-        },
-        "item-6": {
-          "name": "Oketa Fred",
-          "role": "全栈开发工程师",
-          "image": "https://randomuser.me/api/portraits/men/2.jpg",
-          "quote": "我绝对喜欢 MkSaaS！这些组件区块设计精美且易于使用，使创建一个出色的网站变得轻而易举。"
-        },
-        "item-7": {
-          "name": "Zeki",
-          "role": "ChatExtend 创始人",
-          "image": "https://randomuser.me/api/portraits/men/5.jpg",
-          "quote": "使用 MkSaaS 就像解锁了一个秘密的设计超能力。它是简单性和多功能性的完美融合，使我们能够创建既令人惊叹又用户友好的界面。"
-        },
-        "item-8": {
-          "name": "Joseph Kitheka",
-          "role": "全栈开发工程师",
-          "image": "https://randomuser.me/api/portraits/men/9.jpg",
-          "quote": "MkSaaS 改变了我的网页开发方式。他们的 UI 组件、区块和模板极大地加速了我的工作流程。定制每个方面的灵活性使我能够创建独特的用户体验。MkSaaS 是现代网页开发的游戏规则改变者！"
-        },
-        "item-9": {
-          "name": "Khatab Wedaa",
-          "role": "MerakiUI 创建者",
-          "image": "https://randomuser.me/api/portraits/men/10.jpg",
-          "quote": "MkSaaS 是一个优雅、干净且响应式的 SaaS 模板，它非常有助于快速开始您的项目。"
-        },
-        "item-10": {
-          "name": "Rodrigo Aguilar",
-          "role": "TailwindAwesome 创建者",
-          "image": "https://randomuser.me/api/portraits/men/11.jpg",
-          "quote": "我爱 MkSaaS ❤️。这些组件区块结构良好，易于使用，设计精美。它使创建一个出色的网站变得非常容易。"
-        },
-        "item-11": {
-          "name": "Eric Ampire",
-          "role": "Google 开发者专家",
-          "image": "https://randomuser.me/api/portraits/men/12.jpg",
-          "quote": "MkSaaS 模板是任何想要创建一个美丽且功能齐全的网站但没有网页设计经验的人的完美解决方案。这些模板易于使用，可定制，并且响应迅速。我强烈推荐 MkSaaS 模板给任何想要创建网站的人。"
-        },
-        "item-12": {
-          "name": "Roland Tubonge",
-          "role": "软件工程师",
-          "image": "https://randomuser.me/api/portraits/men/13.jpg",
-          "quote": "MkSaaS 设计得如此出色，即使没有网页设计经验，您也可以创造奇迹。让自己被吸引！"
+          "name": "即将推出",
+          "role": "早期用户",
+          "image": "https://randomuser.me/api/portraits/men/3.jpg",
+          "quote": "成为我们早期用户社区的一员，分享你的故事。"
         }
       }
     },
     "stats": {
       "title": "统计",
-      "subtitle": "MkSaaS 相关的数字",
-      "description": "MkSaaS 可让您在几天内轻松构建您的 AI SaaS",
+      "subtitle": "ClawEmploy 的数字",
+      "description": "全球独立开发者正在使用的 AI Agent",
       "items": {
         "item-1": {
-          "title": "GitHub 上的星星"
+          "title": "可用 AI Agent"
         },
         "item-2": {
-          "title": "使用 MkSaaS 的活跃用户"
+          "title": "已完成任务"
         },
         "item-3": {
-          "title": "使用 MkSaaS 启动的应用"
+          "title": "支持的平台"
         }
       }
     },
     "calltoaction": {
-      "title": "开始构建",
-      "description": "MkSaaS 可让您在几天内轻松构建您的 AI SaaS",
-      "primaryButton": "开始使用",
-      "secondaryButton": "查看演示"
+      "title": "准备好雇佣你的第一个 AI 专家了吗？",
+      "description": "加入等待列表，率先部署真正能干活的 AI Agent。",
+      "primaryButton": "加入等待列表",
+      "secondaryButton": "了解更多"
+    },
+    "agents": {
+      "title": "AI Agent 目录",
+      "subtitle": "认识你的新团队",
+      "description": "预配置的专家 Agent，几分钟内即可部署",
+      "items": {
+        "item-1": {
+          "title": "调研 Agent",
+          "description": "市场调研、竞品分析、趋势追踪。获取详尽的报告，直达你的收件箱或聊天工具。",
+          "tag": "调研"
+        },
+        "item-2": {
+          "title": "SEO Agent",
+          "description": "关键词研究、内容优化、外链建设。让你的搜索排名自动提升。",
+          "tag": "SEO"
+        },
+        "item-3": {
+          "title": "测试 Agent",
+          "description": "自动化测试、Bug 追踪、质量报告。每次发布都信心十足。",
+          "tag": "测试"
+        },
+        "item-4": {
+          "title": "DevOps Agent",
+          "description": "CI/CD 监控、部署自动化、基础设施告警。保持系统平稳运行。",
+          "tag": "运维"
+        },
+        "item-5": {
+          "title": "内容 Agent",
+          "description": "博客写作、社媒内容、Newsletter 创作。维持稳定的内容输出。",
+          "tag": "内容"
+        },
+        "item-6": {
+          "title": "PM Agent",
+          "description": "任务分配、进度追踪、日报周报。轻松掌控项目全局。",
+          "tag": "管理"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "如何使用",
+      "subtitle": "三步上手",
+      "description": "几分钟内让你的 AI Agent 开始工作",
+      "steps": {
+        "step-1": {
+          "title": "选择 Agent",
+          "description": "浏览预配置的 AI 专家目录，每个 Agent 都专注于特定领域。"
+        },
+        "step-2": {
+          "title": "配置 & 连接",
+          "description": "连接你的平台 — Telegram、Discord、Slack、GitHub。设置偏好和规则。"
+        },
+        "step-3": {
+          "title": "部署 & 扩展",
+          "description": "你的 Agent 立即开始工作。监控表现，按需扩展。"
+        }
+      }
     }
   },
   "AITextPage": {
@@ -1085,18 +1087,18 @@
   },
   "AIImagePage": {
     "title": "AI 图片",
-    "description": "MkSaaS 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
   },
   "AIChatPage": {
     "title": "AI 聊天",
-    "description": "MkSaaS 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
   },
   "AIVideoPage": {
     "title": "AI 视频",
-    "description": "MkSaaS 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
   },
   "AIAudioPage": {
     "title": "AI 音频",
-    "description": "MkSaaS 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
   }
 }

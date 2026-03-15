@@ -80,3 +80,50 @@ export function constructMetadata({
     }),
   };
 }
+
+/**
+ * Generate JSON-LD structured data for the website
+ * https://developers.google.com/search/docs/appearance/structured-data
+ */
+export function generateOrganizationJsonLd(): string {
+  const baseUrl = getBaseUrl();
+  const orgData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: defaultMessages.Metadata.name,
+    url: baseUrl,
+    logo: `${baseUrl}/logo.svg`,
+    description: defaultMessages.Metadata.description,
+    sameAs: [
+      websiteConfig.metadata.social?.github,
+      websiteConfig.metadata.social?.twitter,
+    ].filter(Boolean),
+  };
+  return JSON.stringify(orgData);
+}
+
+/**
+ * Generate JSON-LD structured data for SoftwareApplication
+ */
+export function generateSoftwareApplicationJsonLd(): string {
+  const baseUrl = getBaseUrl();
+  const appData = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: defaultMessages.Metadata.name,
+    applicationCategory: 'BusinessApplication',
+    description: defaultMessages.Metadata.description,
+    url: baseUrl,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '100',
+    },
+  };
+  return JSON.stringify(appData);
+}

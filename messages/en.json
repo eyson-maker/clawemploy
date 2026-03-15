@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "MkSaaS Demo",
-    "title": "MkSaaS - The Best AI SaaS Boilerplate",
-    "description": "MkSaaS is the best AI SaaS boilerplate. Make AI SaaS in days, simply and effortlessly"
+    "name": "ClawEmploy",
+    "title": "ClawEmploy - Hire AI Experts, Not Headcount",
+    "description": "Pre-configured AI agents for research, SEO, testing & project management. Built on OpenClaw. Pay only for what you use."
   },
   "Common": {
     "premium": "Premium",
@@ -143,12 +143,12 @@
   },
   "AboutPage": {
     "title": "About",
-    "description": "This is MkSaaS, an AI SaaS template built with modern technologies, helping you build your SaaS faster and better.",
-    "authorName": "MkSaaS",
-    "authorBio": "AI SaaS Boilerplate",
-    "introduction": "👋 Hi there! This is MkSaaS, an AI SaaS template built with modern technologies, helping you build your SaaS faster and better. If you have any questions, welcome to contact me.",
-    "talkWithMe": "Talk with me",
-    "followMe": "Follow me on X"
+    "description": "ClawEmploy provides pre-configured AI agents for indie developers and solopreneurs.",
+    "authorName": "ClawEmploy",
+    "authorBio": "AI Agents as a Service",
+    "introduction": "ClawEmploy is an AI agent platform built for indie developers and solopreneurs. We provide pre-configured expert AI agents that automate your daily work — from market research and SEO to testing and project management. Built on the open-source OpenClaw framework.",
+    "talkWithMe": "Contact Us",
+    "followMe": "Follow us on X"
   },
   "ChangelogPage": {
     "title": "Changelog",
@@ -183,11 +183,11 @@
   },
   "WaitlistPage": {
     "title": "Waitlist",
-    "description": "Join our waitlist for the launch of our product",
-    "subtitle": "Join our waitlist for the launch of our product",
+    "description": "Join our waitlist to be first to deploy AI agents",
+    "subtitle": "Join our waitlist to be first to deploy AI agents",
     "form": {
-      "title": "Join Our Waitlist",
-      "description": "We will notify you when we launch our product",
+      "title": "Join the Waitlist",
+      "description": "Be the first to deploy AI agents that actually get work done",
       "email": "Email",
       "subscribe": "Subscribe",
       "subscribing": "Subscribing...",
@@ -198,8 +198,8 @@
   },
   "Newsletter": {
     "title": "Newsletter",
-    "subtitle": "Join the community",
-    "description": "Subscribe to our newsletter for the latest news and updates",
+    "subtitle": "Stay in the loop",
+    "description": "Get updates on new agents, features, and early access opportunities",
     "form": {
       "email": "Email",
       "subscribe": "Subscribe",
@@ -296,7 +296,7 @@
     "previousPage": "Previous",
     "nextPage": "Next",
     "chooseLanguage": "Select language",
-    "title": "MkSaaS Docs",
+    "title": "ClawEmploy Docs",
     "homepage": "Homepage"
   },
   "PremiumContent": {
@@ -315,7 +315,7 @@
   "Marketing": {
     "navbar": {
       "features": {
-        "title": "Features"
+        "title": "Agents"
       },
       "pricing": {
         "title": "Pricing"
@@ -449,7 +449,7 @@
       }
     },
     "footer": {
-      "tagline": "Make AI SaaS in days, simply and effortlessly",
+      "tagline": "Hire AI Experts. Not Headcount.",
       "product": {
         "title": "Product",
         "items": {
@@ -789,17 +789,17 @@
     }
   },
   "HomePage": {
-    "title": "MkSaaS",
-    "description": "Make AI SaaS in days, simply and effortlessly",
+    "title": "ClawEmploy",
+    "description": "Pre-configured AI agents for indie developers and solopreneurs",
     "hero": {
-      "title": "Make AI SaaS in days, simply and effortlessly",
-      "description": "The is a demo website built with MkSaaS, a Next.js SaaS boilerplate to help you build your AI SaaS faster and better.",
-      "introduction": "Introducing MkSaaS Boilerplate",
-      "primary": "Get Started",
-      "secondary": "See Demo"
+      "title": "Hire AI Experts. Not Headcount.",
+      "description": "Pre-configured AI agents for research, SEO, testing & project management. Built on OpenClaw. Pay only for what you use.",
+      "introduction": "Powered by OpenClaw",
+      "primary": "Join Waitlist",
+      "secondary": "See Our Agents"
     },
     "logocloud": {
-      "title": "Your favorite companies are our partners"
+      "title": "Works with the platforms you already use"
     },
     "integration": {
       "title": "Integrations",
@@ -840,25 +840,25 @@
       "secondaryButton": "See Demo"
     },
     "features": {
-      "title": "Features",
-      "subtitle": "The features of your product",
-      "description": "Write the description of your product here",
+      "title": "Why ClawEmploy?",
+      "subtitle": "Built for indie developers",
+      "description": "Everything you need to scale without hiring",
       "items": {
         "item-1": {
-          "title": "Product Feature One",
-          "description": "Please write the detailed description of feature one here, make it as detailed as possible, make it more attractive to users"
+          "title": "Pre-configured Experts",
+          "description": "Each agent comes pre-trained with domain expertise. No prompt engineering needed — just deploy and go."
         },
         "item-2": {
-          "title": "Product Feature Two",
-          "description": "Please write the detailed description of feature two here, make it as detailed as possible, make it more attractive to users"
+          "title": "Pay Per Use",
+          "description": "No salaries, no contracts. Pay only for the tasks your agents complete. Scale up or down instantly."
         },
         "item-3": {
-          "title": "Product Feature Three",
-          "description": "Please write the detailed description of feature three here, make it as detailed as possible, make it more attractive to users"
+          "title": "Multi-Platform",
+          "description": "Your agents work across Telegram, Discord, Slack, GitHub, and more. One dashboard to manage them all."
         },
         "item-4": {
-          "title": "Product Feature Four",
-          "description": "Please write the detailed description of feature four here, make it as detailed as possible, make it more attractive to users"
+          "title": "Built on OpenClaw",
+          "description": "Open-source foundation means full transparency, community-driven improvements, and no vendor lock-in."
         }
       }
     },
@@ -912,126 +912,128 @@
       "subtitle": "Frequently Asked Questions",
       "items": {
         "item-1": {
-          "question": "Do you offer a free trial?",
-          "answer": "Yes, we offer a 7-day free trial."
+          "question": "What is ClawEmploy?",
+          "answer": "ClawEmploy provides pre-configured AI agents that handle specialized tasks like market research, SEO optimization, automated testing, and content creation. Think of it as hiring expert freelancers — but they are AI-powered, available 24/7, and cost a fraction of the price."
         },
         "item-2": {
-          "question": "How do I cancel my subscription?",
-          "answer": "You can cancel your subscription by visiting the billing page."
+          "question": "How does it differ from hiring a freelancer?",
+          "answer": "Unlike freelancers, our AI agents work around the clock, deliver consistent quality, and can be deployed in minutes. No interviews, no onboarding, no missed deadlines. Plus, you only pay for what you use."
         },
         "item-3": {
-          "question": "Can I change my plan?",
-          "answer": "Yes, you can change your plan at any time by visiting the billing page."
+          "question": "What platforms do agents work on?",
+          "answer": "Our agents integrate with Telegram, Discord, Slack, GitHub, and more. They can monitor channels, respond to messages, create pull requests, and automate workflows across all your existing tools."
         },
         "item-4": {
-          "question": "What is the refund policy?",
-          "answer": "We offer a 30-day money-back guarantee if you are not happy with our product."
+          "question": "How much does it cost?",
+          "answer": "We use a pay-per-use model. You only pay for the tasks your agents complete. No monthly subscriptions required, though we offer volume discounts for teams. Join our waitlist for early access pricing."
         },
         "item-5": {
-          "question": "Can't find what you're looking for?",
-          "answer": "Please contact our customer support team at support@mksaas.com"
+          "question": "Is my data secure?",
+          "answer": "Absolutely. We use enterprise-grade encryption, and your data is never used to train models. Each agent runs in an isolated environment. We are also built on the open-source OpenClaw framework, so you can audit the code yourself."
         }
       }
     },
     "testimonials": {
       "title": "Testimonials",
-      "subtitle": "What our customers are saying",
+      "subtitle": "What our users are saying",
       "items": {
         "item-1": {
-          "name": "Jonathan Yombo",
-          "role": "Software Engineer",
+          "name": "Coming Soon",
+          "role": "Early Adopter",
           "image": "https://randomuser.me/api/portraits/men/1.jpg",
-          "quote": "MkSaaS is really extraordinary and very practical, no need to break your head. A real gold mine."
+          "quote": "Join our waitlist to be among the first to experience ClawEmploy."
         },
         "item-2": {
-          "name": "Yves Kalume",
-          "role": "GDE - Android",
-          "image": "https://randomuser.me/api/portraits/men/6.jpg",
-          "quote": "With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to MkSaaS."
+          "name": "Coming Soon",
+          "role": "Early Adopter",
+          "image": "https://randomuser.me/api/portraits/men/2.jpg",
+          "quote": "We are onboarding our first users. Stay tuned for real testimonials."
         },
         "item-3": {
-          "name": "Yucel Faruksahan",
-          "role": "Tailkits Creator",
-          "image": "https://randomuser.me/api/portraits/men/7.jpg",
-          "quote": "Great work on MkSaaS template. This is one of the best personal website that I have seen so far :)"
-        },
-        "item-4": {
-          "name": "Anonymous author",
-          "role": "Product Manager",
-          "image": "https://randomuser.me/api/portraits/men/8.jpg",
-          "quote": "I downloaded the one of MkSaaS template which is very clear to understand at the start and you could modify the codes/blocks to fit perfectly on your purpose of the page."
-        },
-        "item-5": {
-          "name": "Shekinah Tshiokufila",
-          "role": "Senior Software Engineer",
-          "image": "https://randomuser.me/api/portraits/men/4.jpg",
-          "quote": "MkSaaS is redefining the standard of web design, with these blocks it provides an easy and efficient way for those who love beauty but may lack the time to implement it."
-        },
-        "item-6": {
-          "name": "Oketa Fred",
-          "role": "Fullstack Developer",
-          "image": "https://randomuser.me/api/portraits/men/2.jpg",
-          "quote": "I absolutely love MkSaaS! The component blocks are beautifully designed and easy to use, which makes creating a great-looking website a breeze."
-        },
-        "item-7": {
-          "name": "Zeki",
-          "role": "Founder of ChatExtend",
-          "image": "https://randomuser.me/api/portraits/men/5.jpg",
-          "quote": "MkSaaS is the perfect fusion of simplicity and versatility, enabling us to create UIs that are as stunning as they are user-friendly."
-        },
-        "item-8": {
-          "name": "Joseph Kitheka",
-          "role": "Fullstack Developer",
-          "image": "https://randomuser.me/api/portraits/men/9.jpg",
-          "quote": "MkSaaS has transformed the way I develop web applications. Their extensive collection of UI components, blocks, and templates has significantly accelerated my workflow."
-        },
-        "item-9": {
-          "name": "Khatab Wedaa",
-          "role": "MerakiUI Creator",
-          "image": "https://randomuser.me/api/portraits/men/10.jpg",
-          "quote": "MkSaaS is an elegant, clean, and responsive tailwind css components it's very helpful to start fast with your project."
-        },
-        "item-10": {
-          "name": "Rodrigo Aguilar",
-          "role": "TailwindAwesome Creator",
-          "image": "https://randomuser.me/api/portraits/men/11.jpg",
-          "quote": "I love MkSaaS ❤️. The component blocks are well-structured, simple to use, and beautifully designed. It makes it really easy to have a good-looking website in no time."
-        },
-        "item-11": {
-          "name": "Eric Ampire",
-          "role": "@GoogleDevExpert for Android",
-          "image": "https://randomuser.me/api/portraits/men/12.jpg",
-          "quote": "MkSaaS templates are the perfect solution for anyone who wants to create a beautiful and functional website without any web design experience."
-        },
-        "item-12": {
-          "name": "Roland Tubonge",
-          "role": "Software Engineer",
-          "image": "https://randomuser.me/api/portraits/men/13.jpg",
-          "quote": "MkSaaS is so well designed that even with a very poor knowledge of web design you can do miracles. Let yourself be seduced!"
+          "name": "Coming Soon",
+          "role": "Early Adopter",
+          "image": "https://randomuser.me/api/portraits/men/3.jpg",
+          "quote": "Be part of our early adopter community and share your story."
         }
       }
     },
     "stats": {
       "title": "Stats",
-      "subtitle": "MkSaaS in numbers",
-      "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly",
+      "subtitle": "ClawEmploy in numbers",
+      "description": "AI agents working for indie developers worldwide",
       "items": {
         "item-1": {
-          "title": "Stars on GitHub"
+          "title": "AI Agents Available"
         },
         "item-2": {
-          "title": "Active Users"
+          "title": "Tasks Completed"
         },
         "item-3": {
-          "title": "Powered Apps"
+          "title": "Platforms Supported"
         }
       }
     },
     "calltoaction": {
-      "title": "Start Building",
-      "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly",
-      "primaryButton": "Get Started",
-      "secondaryButton": "See Demo"
+      "title": "Ready to Hire Your First AI Expert?",
+      "description": "Join the waitlist and be the first to deploy AI agents that actually get work done.",
+      "primaryButton": "Join Waitlist",
+      "secondaryButton": "Learn More"
+    },
+    "agents": {
+      "title": "Our AI Agents",
+      "subtitle": "Meet your new team",
+      "description": "Pre-configured experts ready to deploy in minutes",
+      "items": {
+        "item-1": {
+          "title": "Research Agent",
+          "description": "Market research, competitor analysis, and trend tracking. Get comprehensive reports delivered to your inbox or chat.",
+          "tag": "Research"
+        },
+        "item-2": {
+          "title": "SEO Agent",
+          "description": "Keyword research, content optimization, and link building. Boost your search rankings on autopilot.",
+          "tag": "SEO"
+        },
+        "item-3": {
+          "title": "Testing Agent",
+          "description": "Automated testing, bug tracking, and quality reports. Ship with confidence every time.",
+          "tag": "QA"
+        },
+        "item-4": {
+          "title": "DevOps Agent",
+          "description": "CI/CD monitoring, deployment automation, and infrastructure alerts. Keep your systems running smoothly.",
+          "tag": "DevOps"
+        },
+        "item-5": {
+          "title": "Content Agent",
+          "description": "Blog writing, social media content, and newsletter creation. Maintain a consistent content pipeline.",
+          "tag": "Content"
+        },
+        "item-6": {
+          "title": "PM Agent",
+          "description": "Task assignment, progress tracking, and daily/weekly reports. Stay on top of your projects.",
+          "tag": "Management"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Three simple steps",
+      "description": "Get your AI agents up and running in minutes",
+      "steps": {
+        "step-1": {
+          "title": "Choose Your Agent",
+          "description": "Browse our catalog of pre-configured AI experts. Each agent specializes in a specific domain."
+        },
+        "step-2": {
+          "title": "Configure & Connect",
+          "description": "Connect your platforms — Telegram, Discord, Slack, GitHub. Set preferences and rules."
+        },
+        "step-3": {
+          "title": "Deploy & Scale",
+          "description": "Your agent starts working immediately. Monitor performance and scale as needed."
+        }
+      }
     }
   },
   "AITextPage": {
@@ -1085,18 +1087,18 @@
   },
   "AIImagePage": {
     "title": "AI Image",
-    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
   },
   "AIChatPage": {
     "title": "AI Chat",
-    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
   },
   "AIVideoPage": {
     "title": "AI Video",
-    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
   },
   "AIAudioPage": {
     "title": "AI Audio",
-    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
   }
 }

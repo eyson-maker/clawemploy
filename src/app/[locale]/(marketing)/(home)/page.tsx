@@ -1,18 +1,12 @@
+import AgentGridSection from '@/components/blocks/agents/agent-grid';
 import CallToActionSection from '@/components/blocks/calltoaction/calltoaction';
 import FaqSection from '@/components/blocks/faqs/faqs';
 import FeaturesSection from '@/components/blocks/features/features';
-import Features2Section from '@/components/blocks/features/features2';
-import Features3Section from '@/components/blocks/features/features3';
 import HeroSection from '@/components/blocks/hero/hero';
-import IntegrationSection from '@/components/blocks/integration/integration';
-import Integration2Section from '@/components/blocks/integration/integration2';
+import HowItWorksSection from '@/components/blocks/how-it-works/how-it-works';
 import LogoCloud from '@/components/blocks/logo-cloud/logo-cloud';
-import PricingSection from '@/components/blocks/pricing/pricing';
-import StatsSection from '@/components/blocks/stats/stats';
-import TestimonialsSection from '@/components/blocks/testimonials/testimonials';
-import CrispChat from '@/components/layout/crisp-chat';
 import { NewsletterCard } from '@/components/newsletter/newsletter-card';
-import { constructMetadata } from '@/lib/metadata';
+import { constructMetadata, generateOrganizationJsonLd, generateSoftwareApplicationJsonLd } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -45,36 +39,37 @@ export default async function HomePage(props: HomePageProps) {
   const { locale } = params;
   const t = await getTranslations('HomePage');
 
+  // Generate JSON-LD structured data
+  const organizationJsonLd = generateOrganizationJsonLd();
+  const softwareJsonLd = generateSoftwareApplicationJsonLd();
+
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: organizationJsonLd }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: softwareJsonLd }}
+      />
       <div className="flex flex-col">
         <HeroSection />
 
         <LogoCloud />
 
-        <StatsSection />
+        <AgentGridSection />
 
-        <IntegrationSection />
+        <HowItWorksSection />
 
         <FeaturesSection />
-
-        <Features2Section />
-
-        <Features3Section />
-
-        <Integration2Section />
-
-        <PricingSection />
 
         <FaqSection />
 
         <CallToActionSection />
 
-        <TestimonialsSection />
-
         <NewsletterCard />
-
-        <CrispChat />
       </div>
     </>
   );

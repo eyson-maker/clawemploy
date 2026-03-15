@@ -1,11 +1,7 @@
-import { PaymentTypes, PlanIntervals } from '@/payment/types';
 import type { WebsiteConfig } from '@/types';
 
 /**
  * website config, without translations
- *
- * docs:
- * https://mksaas.com/docs/config/website
  */
 export const websiteConfig: WebsiteConfig = {
   ui: {
@@ -16,35 +12,30 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/og.png',
-      logoLight: '/logo.png',
-      logoDark: '/logo-dark.png',
+      ogImage: '/og-image.svg',
+      logoLight: '/logo.svg',
+      logoDark: '/logo-dark.svg',
     },
     social: {
-      github: 'https://github.com/MkSaaSHQ',
-      twitter: 'https://mksaas.link/twitter',
-      blueSky: 'https://mksaas.link/bsky',
-      discord: 'https://mksaas.link/discord',
-      mastodon: 'https://mksaas.link/mastodon',
-      linkedin: 'https://mksaas.link/linkedin',
-      youtube: 'https://mksaas.link/youtube',
+      github: 'https://github.com/clawemploy',
+      twitter: 'https://x.com/clawemploy',
     },
   },
   features: {
-    enableUpgradeCard: true,
-    enableUpdateAvatar: true,
+    enableUpgradeCard: false,
+    enableUpdateAvatar: false,
     enableAffonsoAffiliate: false,
     enablePromotekitAffiliate: false,
     enableDatafastRevenueTrack: false,
-    enableCrispChat: process.env.NEXT_PUBLIC_DEMO_WEBSITE === 'true',
-    enableTurnstileCaptcha: process.env.NEXT_PUBLIC_DEMO_WEBSITE === 'true',
+    enableCrispChat: false,
+    enableTurnstileCaptcha: false,
   },
   routes: {
     defaultLoginRedirect: '/dashboard',
   },
   analytics: {
-    enableVercelAnalytics: false,
-    enableSpeedInsights: false,
+    enableVercelAnalytics: true,
+    enableSpeedInsights: true,
   },
   auth: {
     enableGoogleLogin: true,
@@ -72,12 +63,12 @@ export const websiteConfig: WebsiteConfig = {
     relatedPostsSize: 3,
   },
   docs: {
-    enable: true,
+    enable: false,
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'MkSaaS <support@mksaas.com>',
-    supportEmail: 'MkSaaS <support@mksaas.com>',
+    fromEmail: 'ClawEmploy <support@clawemploy.com>',
+    supportEmail: 'ClawEmploy <support@clawemploy.com>',
   },
   newsletter: {
     enable: true,
@@ -85,7 +76,7 @@ export const websiteConfig: WebsiteConfig = {
     autoSubscribeAfterSignUp: true,
   },
   storage: {
-    enable: true,
+    enable: false,
     provider: 's3',
   },
   payment: {
@@ -99,116 +90,21 @@ export const websiteConfig: WebsiteConfig = {
         isFree: true,
         isLifetime: false,
         credits: {
-          enable: true,
-          amount: 50,
-          expireDays: 30,
-        },
-      },
-      pro: {
-        id: 'pro',
-        prices: [
-          {
-            type: PaymentTypes.SUBSCRIPTION,
-            priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_PRO_MONTHLY!,
-            amount: 990,
-            currency: 'USD',
-            interval: PlanIntervals.MONTH,
-          },
-          {
-            type: PaymentTypes.SUBSCRIPTION,
-            priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_PRO_YEARLY!,
-            amount: 9900,
-            currency: 'USD',
-            interval: PlanIntervals.YEAR,
-          },
-        ],
-        isFree: false,
-        isLifetime: false,
-        popular: true,
-        credits: {
-          enable: true,
-          amount: 1000,
-          expireDays: 30,
-        },
-      },
-      lifetime: {
-        id: 'lifetime',
-        prices: [
-          {
-            type: PaymentTypes.ONE_TIME,
-            priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_LIFETIME!,
-            amount: 19900,
-            currency: 'USD',
-            allowPromotionCode: true,
-          },
-        ],
-        isFree: false,
-        isLifetime: true,
-        credits: {
-          enable: true,
-          amount: 1000,
+          enable: false,
+          amount: 0,
           expireDays: 30,
         },
       },
     },
   },
   credits: {
-    enableCredits: true,
+    enableCredits: false,
     enablePackagesForFreePlan: false,
     registerGiftCredits: {
-      enable: true,
-      amount: 50,
+      enable: false,
+      amount: 0,
       expireDays: 30,
     },
-    packages: {
-      basic: {
-        id: 'basic',
-        popular: false,
-        amount: 100,
-        expireDays: 30,
-        price: {
-          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_BASIC!,
-          amount: 990,
-          currency: 'USD',
-          allowPromotionCode: true,
-        },
-      },
-      standard: {
-        id: 'standard',
-        popular: true,
-        amount: 200,
-        expireDays: 30,
-        price: {
-          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_STANDARD!,
-          amount: 1490,
-          currency: 'USD',
-          allowPromotionCode: true,
-        },
-      },
-      premium: {
-        id: 'premium',
-        popular: false,
-        amount: 500,
-        expireDays: 30,
-        price: {
-          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_PREMIUM!,
-          amount: 3990,
-          currency: 'USD',
-          allowPromotionCode: true,
-        },
-      },
-      enterprise: {
-        id: 'enterprise',
-        popular: false,
-        amount: 1000,
-        expireDays: 30,
-        price: {
-          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_ENTERPRISE!,
-          amount: 6990,
-          currency: 'USD',
-          allowPromotionCode: true,
-        },
-      },
-    },
+    packages: {},
   },
 };
