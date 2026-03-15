@@ -58,4 +58,3 @@
     <text x="260" y="22" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.7)">管理</text>
   </g>
 </svg>
-echo "Created og-image.svg"
