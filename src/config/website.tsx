@@ -1,3 +1,4 @@
+import { PaymentTypes, PlanIntervals } from '@/payment/types';
 import type { WebsiteConfig } from '@/types';
 
 /**
@@ -80,7 +81,7 @@ export const websiteConfig: WebsiteConfig = {
     provider: 's3',
   },
   payment: {
-    provider: 'stripe',
+    provider: 'creem',
   },
   price: {
     plans: {
@@ -95,16 +96,105 @@ export const websiteConfig: WebsiteConfig = {
           expireDays: 30,
         },
       },
+      starter: {
+        id: 'starter',
+        prices: [
+          {
+            type: PaymentTypes.SUBSCRIPTION,
+            priceId: 'prod_starter_monthly',
+            amount: 29,
+            currency: 'USD',
+            interval: PlanIntervals.MONTH,
+          },
+        ],
+        isFree: false,
+        isLifetime: false,
+        credits: {
+          enable: true,
+          amount: 100,
+          expireDays: 30,
+        },
+      },
+      pro: {
+        id: 'pro',
+        prices: [
+          {
+            type: PaymentTypes.SUBSCRIPTION,
+            priceId: 'prod_pro_monthly',
+            amount: 79,
+            currency: 'USD',
+            interval: PlanIntervals.MONTH,
+          },
+        ],
+        isFree: false,
+        isLifetime: false,
+        popular: true,
+        credits: {
+          enable: true,
+          amount: 300,
+          expireDays: 30,
+        },
+      },
+      dedicated: {
+        id: 'dedicated',
+        prices: [
+          {
+            type: PaymentTypes.SUBSCRIPTION,
+            priceId: 'prod_dedicated_monthly',
+            amount: 199,
+            currency: 'USD',
+            interval: PlanIntervals.MONTH,
+          },
+        ],
+        isFree: false,
+        isLifetime: false,
+        credits: {
+          enable: true,
+          amount: 800,
+          expireDays: 30,
+        },
+      },
     },
   },
   credits: {
-    enableCredits: false,
+    enableCredits: true,
     enablePackagesForFreePlan: false,
     registerGiftCredits: {
       enable: false,
       amount: 0,
       expireDays: 30,
     },
-    packages: {},
+    packages: {
+      basic: {
+        id: 'basic',
+        amount: 50,
+        price: {
+          priceId: 'prod_credits_basic',
+          amount: 9,
+          currency: 'USD',
+        },
+        popular: false,
+      },
+      standard: {
+        id: 'standard',
+        amount: 150,
+        price: {
+          priceId: 'prod_credits_standard',
+          amount: 19,
+          currency: 'USD',
+        },
+        popular: false,
+      },
+      premium: {
+        id: 'premium',
+        amount: 500,
+        price: {
+          priceId: 'prod_credits_premium',
+          amount: 49,
+          currency: 'USD',
+        },
+        popular: true,
+      },
+    },
   },
 };

@@ -86,17 +86,13 @@
     },
     "pro": {
       "name": "Pro",
-      "description": "Advanced features for professionals",
+      "description": "For professional developers and small teams",
       "features": {
-        "feature-1": "Unlimited projects",
-        "feature-2": "10 GB storage",
-        "feature-3": "Advanced analytics",
+        "feature-1": "Up to 5 AI Agents",
+        "feature-2": "300 Credits/month",
+        "feature-3": "Advanced task automation",
         "feature-4": "Priority support",
-        "feature-5": "Custom domains"
-      },
-      "limits": {
-        "limit-1": "Custom branding",
-        "limit-2": "Lifetime updates"
+        "feature-5": "GitHub integration"
       }
     },
     "lifetime": {
@@ -111,20 +107,41 @@
         "feature-6": "Custom branding",
         "feature-7": "Lifetime updates"
       }
+    },
+    "starter": {
+      "name": "Starter",
+      "description": "For individual developers getting started",
+      "features": {
+        "feature-1": "1 AI Agent",
+        "feature-2": "100 Credits/month",
+        "feature-3": "Basic task automation",
+        "feature-4": "Community support"
+      }
+    },
+    "dedicated": {
+      "name": "Dedicated",
+      "description": "Maximum power for teams and enterprises",
+      "features": {
+        "feature-1": "Unlimited AI Agents",
+        "feature-2": "800 Credits/month",
+        "feature-3": "Priority task queue",
+        "feature-4": "Dedicated support",
+        "feature-5": "Custom integrations"
+      }
     }
   },
   "CreditPackages": {
     "basic": {
       "name": "Basic",
-      "description": "Basic credits package description"
+      "description": "50 credits top-up"
     },
     "standard": {
       "name": "Standard",
-      "description": "Standard credits package description"
+      "description": "150 credits top-up"
     },
     "premium": {
       "name": "Premium",
-      "description": "Premium credits package description"
+      "description": "500 credits top-up"
     },
     "enterprise": {
       "name": "Enterprise",

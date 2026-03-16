@@ -53,7 +53,6 @@ export function usePricePlans(): Record<string, PricePlan> {
         t('pro.features.feature-4'),
         t('pro.features.feature-5'),
       ],
-      limits: [t('pro.limits.limit-1'), t('pro.limits.limit-2')],
     };
   }
 
@@ -72,6 +71,35 @@ export function usePricePlans(): Record<string, PricePlan> {
         t('lifetime.features.feature-7'),
       ],
       limits: [],
+    };
+  }
+
+  if (priceConfig.plans.starter) {
+    plans.starter = {
+      ...priceConfig.plans.starter,
+      name: t('starter.name'),
+      description: t('starter.description'),
+      features: [
+        t('starter.features.feature-1'),
+        t('starter.features.feature-2'),
+        t('starter.features.feature-3'),
+        t('starter.features.feature-4'),
+      ],
+    };
+  }
+
+  if (priceConfig.plans.dedicated) {
+    plans.dedicated = {
+      ...priceConfig.plans.dedicated,
+      name: t('dedicated.name'),
+      description: t('dedicated.description'),
+      features: [
+        t('dedicated.features.feature-1'),
+        t('dedicated.features.feature-2'),
+        t('dedicated.features.feature-3'),
+        t('dedicated.features.feature-4'),
+        t('dedicated.features.feature-5'),
+      ],
     };
   }
 

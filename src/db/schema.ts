@@ -1,4 +1,4 @@
-import { boolean, integer, pgTable, text, timestamp, index } from "drizzle-orm/pg-core";
+import { boolean, integer, pgTable, text, timestamp, index } from 'drizzle-orm/pg-core';
 
 export const user = pgTable("user", {
 	id: text("id").primaryKey(),
@@ -122,4 +122,61 @@ export const creditTransaction = pgTable("credit_transaction", {
 }, (table) => ({
 	creditTransactionUserIdIdx: index("credit_transaction_user_id_idx").on(table.userId),
 	creditTransactionTypeIdx: index("credit_transaction_type_idx").on(table.type),
+}));
+
+// Agent instance table
+export const agentInstance = pgTable("agent_instance", {
+	id: text("id").primaryKey(),
+	userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
+	name: text("name").notNull(),
+	status: text("status").notNull().default("pending"), // pending, active, sleeping, terminated
+	plan: text("plan").notNull(), // starter, pro, dedicated
+	channel: text("channel"), // telegram, discord, web
+	channelConfig: text("channel_config"), // JSON string
+	processId: text("process_id"),
+	workspacePath: text("workspace_path"),
+	createdAt: timestamp("created_at").notNull().defaultNow(),
+	updatedAt: timestamp("updated_at").notNull().defaultNow(),
+	lastActiveAt: timestamp("last_active_at"),
+}, (table) => ({
+	agentInstanceUserIdIdx: index("agent_instance_user_id_idx").on(table.userId),
+	agentInstanceStatusIdx: index("agent_instance_status_idx").on(table.status),
+}));
+
+// Agent task table
+export const agentTask = pgTable("agent_task", {
+	id: text("id").primaryKey(),
+	agentId: text("agent_id").notNull().references(() => agentInstance.id, { onDelete: "cascade" }),
+	userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
+	description: text("description"),
+	status: text("status").notNull().default("pending"), // pending, running, completed, failed
+	engine: text("engine"), // gemini, codex, claude-code
+	creditsUsed: integer("credits_used").default(0),
+	githubCommit: text("github_commit"),
+	githubRepo: text("github_repo"),
+	result: text("result"), // JSON string
+	startedAt: timestamp("started_at"),
+	completedAt: timestamp("completed_at"),
+	createdAt: timestamp("created_at").notNull().defaultNow(),
+}, (table) => ({
+	agentTaskAgentIdIdx: index("agent_task_agent_id_idx").on(table.agentId),
+	agentTaskUserIdIdx: index("agent_task_user_id_idx").on(table.userId),
+	agentTaskStatusIdx: index("agent_task_status_idx").on(table.status),
+}));
+
+// Agent project table
+export const agentProject = pgTable("agent_project", {
+	id: text("id").primaryKey(),
+	agentId: text("agent_id").notNull().references(() => agentInstance.id, { onDelete: "cascade" }),
+	userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
+	name: text("name").notNull(),
+	githubRepo: text("github_repo"),
+	techStack: text("tech_stack"), // JSON array string
+	description: text("description"),
+	isActive: boolean("is_active").default(true),
+	createdAt: timestamp("created_at").notNull().defaultNow(),
+	updatedAt: timestamp("updated_at").notNull().defaultNow(),
+}, (table) => ({
+	agentProjectAgentIdIdx: index("agent_project_agent_id_idx").on(table.agentId),
+	agentProjectUserIdIdx: index("agent_project_user_id_idx").on(table.userId),
 }));

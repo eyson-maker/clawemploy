@@ -162,7 +162,7 @@ export interface StorageConfig {
  * Payment configuration
  */
 export interface PaymentConfig {
-  provider: 'stripe';                // The payment provider, only stripe is supported for now
+  provider: 'stripe' | 'creem';      // The payment provider
 }
 
 /**

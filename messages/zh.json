@@ -86,17 +86,13 @@
     },
     "pro": {
       "name": "专业版",
-      "description": "专业人士的高级功能",
+      "description": "适合专业开发者和小型团队",
       "features": {
-        "feature-1": "无限项目",
-        "feature-2": "10GB存储空间",
-        "feature-3": "高级分析功能",
+        "feature-1": "最多 5 个 AI Agent",
+        "feature-2": "每月 300 Credits",
+        "feature-3": "高级任务自动化",
         "feature-4": "优先支持",
-        "feature-5": "自定义域名"
-      },
-      "limits": {
-        "limit-1": "不支持自定义品牌",
-        "limit-2": "不支持终身更新"
+        "feature-5": "GitHub 集成"
       }
     },
     "lifetime": {
@@ -111,20 +107,41 @@
         "feature-6": "自定义品牌",
         "feature-7": "终身更新"
       }
+    },
+    "starter": {
+      "name": "入门版",
+      "description": "适合刚起步的个人开发者",
+      "features": {
+        "feature-1": "1 个 AI Agent",
+        "feature-2": "每月 100 Credits",
+        "feature-3": "基础任务自动化",
+        "feature-4": "社区支持"
+      }
+    },
+    "dedicated": {
+      "name": "专属版",
+      "description": "为团队和企业提供最强算力",
+      "features": {
+        "feature-1": "无限 AI Agent",
+        "feature-2": "每月 800 Credits",
+        "feature-3": "优先任务队列",
+        "feature-4": "专属支持",
+        "feature-5": "自定义集成"
+      }
     }
   },
   "CreditPackages": {
     "basic": {
-      "name": "基础版",
-      "description": "基础版功能介绍放这里"
+      "name": "基础包",
+      "description": "50 Credits 充值"
     },
     "standard": {
-      "name": "标准版",
-      "description": "标准版功能介绍放这里"
+      "name": "标准包",
+      "description": "150 Credits 充值"
     },
     "premium": {
-      "name": "高级版",
-      "description": "高级版功能介绍放这里"
+      "name": "高级包",
+      "description": "500 Credits 充值"
     },
     "enterprise": {
       "name": "企业版",
