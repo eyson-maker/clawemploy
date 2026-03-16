@@ -82,48 +82,43 @@ export function constructMetadata({
 }
 
 /**
- * Generate JSON-LD structured data for the website
+ * Generate combined JSON-LD structured data for the homepage
  * https://developers.google.com/search/docs/appearance/structured-data
  */
-export function generateOrganizationJsonLd(): string {
-  const baseUrl = getBaseUrl();
-  const orgData = {
+export function generateHomepageJsonLd(): string {
+  const organization = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: defaultMessages.Metadata.name,
-    url: baseUrl,
-    logo: `${baseUrl}/logo.svg`,
-    description: defaultMessages.Metadata.description,
+    name: 'ClawEmploy',
+    url: 'https://clawemploy.com',
+    logo: 'https://clawemploy.com/og-image.png',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'support@clawemploy.com',
+      contactType: 'customer service',
+    },
     sameAs: [
-      websiteConfig.metadata.social?.github,
-      websiteConfig.metadata.social?.twitter,
-    ].filter(Boolean),
+      'https://x.com/clawemploy',
+      'https://github.com/clawemploy',
+    ],
   };
-  return JSON.stringify(orgData);
-}
 
-/**
- * Generate JSON-LD structured data for SoftwareApplication
- */
-export function generateSoftwareApplicationJsonLd(): string {
-  const baseUrl = getBaseUrl();
-  const appData = {
+  const softwareApplication = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: defaultMessages.Metadata.name,
-    applicationCategory: 'BusinessApplication',
-    description: defaultMessages.Metadata.description,
-    url: baseUrl,
+    name: 'ClawEmploy',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'Web',
+    description:
+      'Hire AI agents that actually do the work. Developer, SEO, marketing, research — all through chat.',
     offers: {
-      '@type': 'Offer',
-      price: '0',
+      '@type': 'AggregateOffer',
+      lowPrice: '29',
+      highPrice: '199',
       priceCurrency: 'USD',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '100',
+      offerCount: '3',
     },
   };
-  return JSON.stringify(appData);
+
+  return JSON.stringify([organization, softwareApplication]);
 }

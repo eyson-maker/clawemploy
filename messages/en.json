@@ -1147,5 +1147,28 @@
     "noProjects": "No projects yet",
     "creditsUsed": "Credits Used",
     "tasksCompleted": "Tasks Completed"
+  },
+  "Credits": {
+    "dailyLimit": {
+      "title": "Daily Usage Limit",
+      "description": "To ensure fair usage, daily credit limits apply.",
+      "starter": "Starter: 10 credits/day",
+      "pro": "Pro: 20 credits/day",
+      "dedicated": "Dedicated: 50 credits/day",
+      "exceeded": "Daily limit reached. Your credits will reset tomorrow.",
+      "remaining": "{count} credits remaining today"
+    },
+    "expiry": {
+      "title": "Credit Expiry",
+      "description": "Credits expire 3 months after purchase or allocation.",
+      "warning": "{count} credits expiring in {days} days",
+      "expired": "{count} credits have expired"
+    },
+    "lowBalance": {
+      "title": "Low Balance Alert",
+      "subject": "Your ClawEmploy credits are running low",
+      "body": "You have {count} credits remaining ({percent}% of your plan). Top up to keep your AI agents working.",
+      "cta": "Buy More Credits"
+    }
   }
 }

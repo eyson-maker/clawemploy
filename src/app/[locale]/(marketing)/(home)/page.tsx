@@ -6,7 +6,7 @@ import HeroSection from '@/components/blocks/hero/hero';
 import HowItWorksSection from '@/components/blocks/how-it-works/how-it-works';
 import LogoCloud from '@/components/blocks/logo-cloud/logo-cloud';
 import { NewsletterCard } from '@/components/newsletter/newsletter-card';
-import { constructMetadata, generateOrganizationJsonLd, generateSoftwareApplicationJsonLd } from '@/lib/metadata';
+import { constructMetadata, generateHomepageJsonLd } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -40,19 +40,14 @@ export default async function HomePage(props: HomePageProps) {
   const t = await getTranslations('HomePage');
 
   // Generate JSON-LD structured data
-  const organizationJsonLd = generateOrganizationJsonLd();
-  const softwareJsonLd = generateSoftwareApplicationJsonLd();
+  const jsonLd = generateHomepageJsonLd();
 
   return (
     <>
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: organizationJsonLd }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: softwareJsonLd }}
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
       <div className="flex flex-col">
         <HeroSection />
@@ -64,6 +59,8 @@ export default async function HomePage(props: HomePageProps) {
         <HowItWorksSection />
 
         <FeaturesSection />
+
+        {/* TODO: Wire up Trust section component here */}
 
         <FaqSection />
 

@@ -1147,5 +1147,28 @@
     "noProjects": "暂无项目",
     "creditsUsed": "已用 Credits",
     "tasksCompleted": "已完成任务"
+  },
+  "Credits": {
+    "dailyLimit": {
+      "title": "每日使用限额",
+      "description": "为确保公平使用，每日 Credit 使用有上限。",
+      "starter": "Starter: 10 credits/天",
+      "pro": "Pro: 20 credits/天",
+      "dedicated": "Dedicated: 50 credits/天",
+      "exceeded": "今日额度已用完，明天将自动重置。",
+      "remaining": "今日剩余 {count} credits"
+    },
+    "expiry": {
+      "title": "Credit 有效期",
+      "description": "Credit 自购买或分配之日起 3 个月内有效。",
+      "warning": "{count} 个 Credit 将在 {days} 天后过期",
+      "expired": "{count} 个 Credit 已过期"
+    },
+    "lowBalance": {
+      "title": "余额不足提醒",
+      "subject": "你的 ClawEmploy Credits 余额不足",
+      "body": "你还剩 {count} 个 Credit（套餐的 {percent}%）。请及时充值以保持 AI Agent 正常工作。",
+      "cta": "购买更多 Credits"
+    }
   }
 }
