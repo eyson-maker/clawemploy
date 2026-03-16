@@ -69,7 +69,7 @@ export const websiteConfig: WebsiteConfig = {
   mail: {
     provider: 'resend',
     fromEmail: 'ClawEmploy <support@clawemploy.com>',
-    supportEmail: 'ClawEmploy <support@clawemploy.com>',
+    supportEmail: 'support@clawemploy.com',
   },
   newsletter: {
     enable: true,

@@ -1,3 +1,7 @@
+// TODO: Phase 6 - Add rate limiting middleware
+// Recommended: Use Vercel Edge middleware or upstash/ratelimit
+// Limits: 10 req/min per IP for webhook, 30 req/min for API routes
+
 import { handleWebhookEvent } from '@/payment';
 import { type NextRequest, NextResponse } from 'next/server';
 

@@ -1052,6 +1052,16 @@
           "description": "Your agent completes the work and delivers results. Code goes to GitHub, reports land in your inbox."
         }
       }
+    },
+    "trust": {
+      "title": "Your Code. Your Control.",
+      "subtitle": "Enterprise-grade security for every plan",
+      "items": {
+        "item-1": { "icon": "shield", "title": "Process Isolation", "description": "Every agent runs in its own isolated process with dedicated workspace and memory. No data leaks between users." },
+        "item-2": { "icon": "lock", "title": "Encrypted Storage", "description": "All tokens, API keys, and sensitive data encrypted with AES-256 at rest. Zero plaintext storage." },
+        "item-3": { "icon": "eye", "title": "Full Audit Trail", "description": "Every action your agent takes is logged. Review what was changed, when, and why — anytime." },
+        "item-4": { "icon": "key", "title": "You Own Your Data", "description": "Your code stays in your GitHub repo. Delete your account and all agent memory is wiped. No lock-in." }
+      }
     }
   },
   "AITextPage": {

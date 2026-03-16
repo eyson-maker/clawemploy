@@ -1052,6 +1052,16 @@
           "description": "智能体完成工作并交付成果。代码推送到 GitHub，报告送达你的邮箱。"
         }
       }
+    },
+    "trust": {
+      "title": "你的代码，你掌控",
+      "subtitle": "每个套餐都享有企业级安全保障",
+      "items": {
+        "item-1": { "icon": "shield", "title": "进程级隔离", "description": "每个 Agent 运行在独立进程中，拥有专属工作区和记忆。用户间数据完全隔离。" },
+        "item-2": { "icon": "lock", "title": "加密存储", "description": "所有 Token、API Key 和敏感数据采用 AES-256 加密存储。零明文存储。" },
+        "item-3": { "icon": "eye", "title": "完整审计日志", "description": "Agent 的每一个操作都有记录。随时查看修改了什么、何时修改、为何修改。" },
+        "item-4": { "icon": "key", "title": "数据归你所有", "description": "代码留在你的 GitHub 仓库。删除账号即清除所有 Agent 记忆。无锁定。" }
+      }
     }
   },
   "AITextPage": {
