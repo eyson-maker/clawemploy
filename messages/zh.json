@@ -88,10 +88,10 @@
       "name": "专业版",
       "description": "适合专业开发者和小型团队",
       "features": {
-        "feature-1": "最多 5 个 AI Agent",
-        "feature-2": "每月 300 Credits",
-        "feature-3": "高级任务自动化",
-        "feature-4": "优先支持",
+        "feature-1": "每月 300 Credits",
+        "feature-2": "优先执行",
+        "feature-3": "高级记忆",
+        "feature-4": "邮件支持",
         "feature-5": "GitHub 集成"
       }
     },
@@ -112,9 +112,9 @@
       "name": "入门版",
       "description": "适合刚起步的个人开发者",
       "features": {
-        "feature-1": "1 个 AI Agent",
-        "feature-2": "每月 100 Credits",
-        "feature-3": "基础任务自动化",
+        "feature-1": "每月 100 Credits",
+        "feature-2": "Telegram 接入",
+        "feature-3": "基础项目记忆",
         "feature-4": "社区支持"
       }
     },
@@ -122,11 +122,12 @@
       "name": "专属版",
       "description": "为团队和企业提供最强算力",
       "features": {
-        "feature-1": "无限 AI Agent",
-        "feature-2": "每月 800 Credits",
-        "feature-3": "优先任务队列",
-        "feature-4": "专属支持",
-        "feature-5": "自定义集成"
+        "feature-1": "每月 800 Credits",
+        "feature-2": "专属实例",
+        "feature-3": "无限记忆",
+        "feature-4": "优先支持",
+        "feature-5": "自定义技能",
+        "feature-6": "API 接入"
       }
     }
   },
@@ -809,14 +810,14 @@
     "title": "ClawEmploy",
     "description": "为独立开发者和超级个体打造的预配置 AI Agent",
     "hero": {
-      "title": "雇佣 AI 专家，而非员工",
-      "description": "预配置的 AI Agent，覆盖市场调研、SEO 优化、自动化测试和项目管理。基于 OpenClaw 构建，按需付费。",
-      "introduction": "基于 OpenClaw 构建",
-      "primary": "加入等待列表",
-      "secondary": "查看 Agent"
+      "title": "雇佣你的 AI 程序员",
+      "description": "在 Telegram 上与你的 AI 程序员对话，用自然语言描述需求，代码直接推送到你的 GitHub 仓库。零配置，开箱即用。",
+      "introduction": "Powered by OpenClaw",
+      "primary": "立即开始",
+      "secondary": "了解工作方式"
     },
     "logocloud": {
-      "title": "与你已经在用的平台无缝集成"
+      "title": "由行业领先的 AI 引擎驱动"
     },
     "integration": {
       "title": "集成",
@@ -858,24 +859,24 @@
     },
     "features": {
       "title": "为什么选择 ClawEmploy？",
-      "subtitle": "专为独立开发者打造",
-      "description": "无需招聘即可扩展的一切所需",
+      "subtitle": "真正能交付代码的 AI 程序员",
+      "description": "不只是聊天机器人——是理解你项目的开发者",
       "items": {
         "item-1": {
-          "title": "预配置专家",
-          "description": "每个 Agent 都预置了领域专业知识，无需提示词工程——部署即用。"
+          "title": "零配置",
+          "description": "无需在本地安装任何 CLI 工具，无需配置环境。打开 Telegram，描述任务，AI 程序员立即开始工作。"
         },
         "item-2": {
-          "title": "按需付费",
-          "description": "没有工资，没有合同。只为 Agent 完成的任务付费，随时扩缩容。"
+          "title": "项目记忆",
+          "description": "AI 程序员会记住你的技术栈、代码规范和项目结构。每次任务都基于之前的上下文。"
         },
         "item-3": {
-          "title": "多平台支持",
-          "description": "你的 Agent 可在 Telegram、Discord、Slack、GitHub 等平台工作。一个面板管理所有。"
+          "title": "多引擎",
+          "description": "自动选择最佳 AI 引擎——Claude Code、Codex 或 Gemini——为每个任务交付最优结果。"
         },
         "item-4": {
-          "title": "基于 OpenClaw",
-          "description": "开源基础意味着完全透明、社区驱动的改进，以及零厂商锁定。"
+          "title": "GitHub 交付",
+          "description": "代码直接推送到你的 GitHub 仓库。审查 Pull Request，准备好就合并。你的仓库，你做主。"
         }
       }
     },
@@ -926,27 +927,27 @@
     },
     "faqs": {
       "title": "常见问题",
-      "subtitle": "如果您有任何问题，请随时联系我们",
+      "subtitle": "常见问题解答",
       "items": {
         "item-1": {
           "question": "什么是 ClawEmploy？",
-          "answer": "ClawEmploy 提供预配置的 AI Agent，处理市场调研、SEO 优化、自动化测试和内容创作等专业任务。可以理解为雇佣 AI 驱动的专家自由职业者——全天候可用，成本仅为人力的零头。"
+          "answer": "ClawEmploy 是一个 AI 程序员订阅服务。订阅套餐后，通过 Telegram 连接，用自然语言描述编程任务。你的 AI 程序员会编写代码并直接推送到你的 GitHub 仓库。"
         },
         "item-2": {
-          "question": "与雇佣自由职业者有什么区别？",
-          "answer": "与自由职业者不同，我们的 AI Agent 全天候工作，交付质量稳定，几分钟内即可部署。不需要面试、不需要入职培训、不会错过截止日期。而且只按使用量付费。"
+          "question": "AI 是如何写代码的？",
+          "answer": "底层使用云端 CLI 编程引擎，包括 Claude Code、Codex 和 Gemini。我们的智能路由系统会根据任务复杂度、编程语言和上下文，自动选择最佳引擎。"
         },
         "item-3": {
-          "question": "Agent 可以在哪些平台工作？",
-          "answer": "我们的 Agent 集成了 Telegram、Discord、Slack、GitHub 等平台。它们可以监控频道、回复消息、创建 Pull Request，并在你现有的工具中自动化工作流程。"
+          "question": "支持哪些编程语言？",
+          "answer": "支持所有主流编程语言——JavaScript、TypeScript、Python、Go、Rust、Java、C#、Ruby、PHP、Swift 等。AI 程序员会自动适配你项目使用的技术栈。"
         },
         "item-4": {
-          "question": "费用是多少？",
-          "answer": "我们采用按需付费模式。只为 Agent 完成的任务付费，无需月度订阅（团队可享受批量折扣）。加入等待列表获取早期访问价格。"
+          "question": "定价是怎样的？",
+          "answer": "每个套餐包含每月 Credits 额度。Credits 按任务复杂度消耗。Starter 包含 100 Credits（$29/月），Pro 包含 300 Credits（$79/月），Dedicated 包含 800 Credits（$199/月）。未使用的 Credits 不会累积到下月。"
         },
         "item-5": {
-          "question": "我的数据安全吗？",
-          "answer": "绝对安全。我们使用企业级加密，你的数据不会被用于模型训练。每个 Agent 都在隔离环境中运行。我们基于开源 OpenClaw 框架构建，你可以自行审计代码。"
+          "question": "我的代码安全吗？",
+          "answer": "绝对安全。每个编程会话都在隔离进程中运行，没有共享状态。你的代码不会被用于训练，其他用户无法访问。所有通信都经过端到端加密。"
         }
       }
     },
@@ -977,78 +978,78 @@
     "stats": {
       "title": "统计",
       "subtitle": "ClawEmploy 的数字",
-      "description": "全球独立开发者正在使用的 AI Agent",
+      "description": "AI 程序员正在为全球团队交付代码",
       "items": {
         "item-1": {
-          "title": "可用 AI Agent"
+          "title": "代码行数已交付"
         },
         "item-2": {
-          "title": "已完成任务"
+          "title": "开发者小时已节省"
         },
         "item-3": {
-          "title": "支持的平台"
+          "title": "GitHub 仓库已连接"
         }
       }
     },
     "calltoaction": {
-      "title": "准备好雇佣你的第一个 AI 专家了吗？",
-      "description": "加入等待列表，率先部署真正能干活的 AI Agent。",
-      "primaryButton": "加入等待列表",
-      "secondaryButton": "了解更多"
+      "title": "准备好雇佣你的 AI 程序员了吗？",
+      "description": "100 Credits 起，每月仅需 $29。零配置，零负担，直接交付。",
+      "primaryButton": "立即开始 — $29/月",
+      "secondaryButton": "查看定价"
     },
     "agents": {
-      "title": "AI Agent 目录",
-      "subtitle": "认识你的新团队",
-      "description": "预配置的专家 Agent，几分钟内即可部署",
+      "title": "你的 AI 程序员能做什么",
+      "subtitle": "一个程序员，多种能力",
+      "description": "从编写代码到架构设计——全部通过对话完成",
       "items": {
         "item-1": {
-          "title": "调研 Agent",
-          "description": "市场调研、竞品分析、趋势追踪。获取详尽的报告，直达你的收件箱或聊天工具。",
-          "tag": "调研"
+          "title": "代码生成",
+          "description": "从需求到可运行的代码。自动选择最佳 AI 引擎——Claude Code、Codex 或 Gemini——完成每项任务。",
+          "tag": "构建"
         },
         "item-2": {
-          "title": "SEO Agent",
-          "description": "关键词研究、内容优化、外链建设。让你的搜索排名自动提升。",
-          "tag": "SEO"
+          "title": "代码审查",
+          "description": "审查代码质量，发现安全漏洞，确保最佳实践。在合并前获得可执行的反馈。",
+          "tag": "审查"
         },
         "item-3": {
-          "title": "测试 Agent",
-          "description": "自动化测试、Bug 追踪、质量报告。每次发布都信心十足。",
-          "tag": "测试"
+          "title": "架构设计",
+          "description": "系统设计、API 设计、数据建模。为你的项目提供专家级的架构建议。",
+          "tag": "设计"
         },
         "item-4": {
-          "title": "DevOps Agent",
-          "description": "CI/CD 监控、部署自动化、基础设施告警。保持系统平稳运行。",
-          "tag": "运维"
+          "title": "Bug 修复",
+          "description": "定位问题，修复 Bug，执行回归测试。描述问题，修复代码直接推送到你的仓库。",
+          "tag": "调试"
         },
         "item-5": {
-          "title": "内容 Agent",
-          "description": "博客写作、社媒内容、Newsletter 创作。维持稳定的内容输出。",
-          "tag": "内容"
+          "title": "文档生成",
+          "description": "自动生成技术文档、API 文档和内联注释。轻松保持代码库文档完善。",
+          "tag": "文档"
         },
         "item-6": {
-          "title": "PM Agent",
-          "description": "任务分配、进度追踪、日报周报。轻松掌控项目全局。",
-          "tag": "管理"
+          "title": "任务规划",
+          "description": "将大需求拆解为可执行的任务清单。在编写任何代码之前，获得清晰的路线图。",
+          "tag": "规划"
         }
       }
     },
     "howItWorks": {
       "title": "如何使用",
       "subtitle": "三步上手",
-      "description": "几分钟内让你的 AI Agent 开始工作",
+      "description": "从注册到交付代码，只需几分钟",
       "steps": {
         "step-1": {
-          "title": "选择 Agent",
-          "description": "浏览预配置的 AI 专家目录，每个 Agent 都专注于特定领域。"
+          "title": "订阅 & 连接",
+          "description": "选择套餐，连接你的 Telegram 账号，绑定你的 GitHub 仓库。"
         },
         "step-2": {
-          "title": "配置 & 连接",
-          "description": "连接你的平台 — Telegram、Discord、Slack、GitHub。设置偏好和规则。"
+          "title": "对话描述需求",
+          "description": "用自然语言描述你的编程需求——就像和真人同事聊天一样。"
         },
         "step-3": {
-          "title": "部署 & 扩展",
-          "description": "你的 Agent 立即开始工作。监控表现，按需扩展。"
+          "title": "代码交付",
+          "description": "AI 程序员编写代码并推送到你的 GitHub 仓库。审查、合并、上线。"
         }
       }
     }
@@ -1117,5 +1118,24 @@
   "AIAudioPage": {
     "title": "AI 音频",
     "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+  },
+  "AgentDashboard": {
+    "title": "我的 Agent",
+    "noAgent": "你还没有雇用 Agent",
+    "getStarted": "雇用你的 Agent",
+    "status": "状态",
+    "plan": "套餐",
+    "channel": "渠道",
+    "credits": "Credits",
+    "status.active": "运行中",
+    "status.sleeping": "休眠中",
+    "status.pending": "准备中",
+    "status.terminated": "已终止",
+    "recentTasks": "最近任务",
+    "noTasks": "暂无任务",
+    "projects": "项目",
+    "noProjects": "暂无项目",
+    "creditsUsed": "已用 Credits",
+    "tasksCompleted": "已完成任务"
   }
 }
