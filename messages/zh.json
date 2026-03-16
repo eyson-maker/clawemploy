@@ -2,7 +2,7 @@
   "Metadata": {
     "name": "ClawEmploy",
     "title": "ClawEmploy - 雇佣 AI 专家，而非员工",
-    "description": "为独立开发者和超级个体打造的预配置 AI Agent 服务，涵盖调研、SEO、测试和项目管理。基于 OpenClaw 构建。"
+    "description": "雇用预配置的 AI Agent，覆盖编程、SEO、调研和项目管理。你的 AI 开发者通过 Telegram 对话，代码直接推送到 GitHub。月费低至 $29 起。"
   },
   "Common": {
     "premium": "付费文章",
@@ -46,7 +46,7 @@
   },
   "PricingPage": {
     "title": "价格",
-    "description": "选择最适合您的付费计划",
+    "description": "比较 AI Agent 套餐方案。Starter、Pro 和 Dedicated 三档灵活 Credits 额度。月费 $29 起雇用你的 AI 开发者。",
     "subtitle": "选择最适合您的付费计划",
     "monthly": "月付",
     "yearly": "年付",
@@ -161,7 +161,7 @@
   },
   "AboutPage": {
     "title": "关于我们",
-    "description": "ClawEmploy 为独立开发者和超级个体提供预配置的 AI Agent 服务。",
+    "description": "ClawEmploy 是为独立开发者和超级个体打造的 AI Agent 平台。雇用专业 AI Agent 处理编程、SEO、调研等工作。",
     "authorName": "ClawEmploy",
     "authorBio": "AI Agent 即服务",
     "introduction": "ClawEmploy 是一个为独立开发者和超级个体打造的 AI Agent 平台。我们提供预配置的专家级 AI Agent，帮助你自动化日常工作——从市场调研、SEO 到测试和项目管理。基于开源 OpenClaw 框架构建。",
@@ -200,16 +200,16 @@
     }
   },
   "WaitlistPage": {
-    "title": "等待队列",
-    "description": "加入等待列表，率先部署 AI Agent",
-    "subtitle": "加入等待列表，率先部署 AI Agent",
+    "title": "加入候补名单",
+    "description": "内测席位有限，加入候补名单优先获得体验资格",
+    "subtitle": "内测席位有限，加入候补名单优先获得体验资格",
     "form": {
-      "title": "加入等待列表",
-      "description": "率先部署真正能干活的 AI Agent",
+      "title": "预约你的席位",
+      "description": "成为首批雇用 AI 开发者的用户。内测名额有限，早期成员将获得优先体验权和专属福利。",
       "email": "邮箱",
-      "subscribe": "加入等待队列",
-      "subscribing": "加入等待队列中...",
-      "success": "加入等待队列成功",
+      "subscribe": "加入候补名单",
+      "subscribing": "加入中...",
+      "success": "你已加入候补名单！席位开放时我们会第一时间通知你。",
       "fail": "加入等待队列失败",
       "emailValidation": "请输入有效的邮箱地址"
     }
@@ -381,8 +381,8 @@
             "description": "与我们的团队联系，以获取支持或咨询"
           },
           "waitlist": {
-            "title": "邮件列表",
-            "description": "加入我们的邮件列表，获取最新消息和更新"
+            "title": "候补名单",
+            "description": "内测席位有限，加入即可优先获得体验资格"
           },
           "changelog": {
             "title": "更新日志",
@@ -490,7 +490,7 @@
         "items": {
           "about": "关于我们",
           "contact": "联系我们",
-          "waitlist": "邮件列表"
+          "waitlist": "候补名单"
         }
       },
       "legal": {
@@ -811,7 +811,7 @@
     "description": "为独立开发者和超级个体打造的预配置 AI Agent",
     "hero": {
       "title": "雇佣 AI 专家，而非增加人数",
-      "description": "预配置的 AI 智能体，覆盖开发、研究、SEO 等场景。首位员工——AI 程序员，在 Telegram 上对话，代码直达 GitHub。",
+      "description": "预配置的 AI Agent，覆盖开发、调研、SEO 等领域。你的第一位 AI Agent 员工 — 一位通过 Telegram 对话、直接将代码推送到 GitHub 的全栈开发者。",
       "introduction": "Powered by OpenClaw",
       "primary": "立即开始",
       "secondary": "认识我们的 Agent"
@@ -864,15 +864,15 @@
       "items": {
         "item-1": {
           "title": "零配置",
-          "description": "无需在本地安装任何 CLI 工具，无需配置环境。打开 Telegram，描述任务，AI 程序员立即开始工作。"
+          "description": "无需安装 CLI 工具，无需配置环境。打开 Telegram，描述你的任务，AI Agent 立即开始工作。"
         },
         "item-2": {
           "title": "持久记忆",
-          "description": "智能体记住你的项目、偏好和上下文。每次互动都基于之前的积累——就像真正的团队成员。"
+          "description": "你的 AI Agent 会记住你的项目、偏好和上下文。每次交互都基于之前的记忆 — 就像一个永远不会忘事的真正队友。"
         },
         "item-3": {
           "title": "多引擎",
-          "description": "自动选择最佳 AI 引擎——Claude Code、Codex 或 Gemini——为每个任务交付最优结果。"
+          "description": "每个 AI Agent 会自动选择最佳编码引擎 — Claude Code、Codex 或 Gemini — 为每个任务交付最优结果。"
         },
         "item-4": {
           "title": "安全隔离",
@@ -883,7 +883,7 @@
     "features2": {
       "title": "功能2",
       "subtitle": "您的 SaaS 产品功能",
-      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "description": "每个 AI Agent 内置企业级工具",
       "feature-1": "特色功能特点一",
       "feature-2": "特色功能特点二",
       "feature-3": "特色功能特点三",
@@ -892,7 +892,7 @@
     "features3": {
       "title": "功能3",
       "subtitle": "您的 SaaS 产品功能",
-      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "description": "管理你的 AI 团队所需的一切",
       "items": {
         "item-1": {
           "title": "产品特色功能一",
@@ -939,15 +939,15 @@
         },
         "item-3": {
           "question": "其他智能体什么时候上线？",
-          "answer": "我们正在构建专业智能体阵容：SEO 分析师、研究助手、内容写手、QA 工程师、DevOps 智能体均在开发中。订阅后将第一时间收到上线通知。"
+          "answer": "我们正在打造一系列专业 AI Agent。SEO 专家、增长营销员、深度研究员、测试工程师和项目经理正在开发中。订阅以获取每个 AI Agent 上线通知。"
         },
         "item-4": {
           "question": "我的代码和数据安全吗？",
           "answer": "绝对安全。每个智能体运行在独立隔离进程中，拥有专属记忆和工作空间。你的代码和对话不会与其他用户共享，也永远不会用于训练 AI 模型。"
         },
         "item-5": {
-          "question": "我的代码安全吗？",
-          "answer": "绝对安全。每个编程会话都在隔离进程中运行，没有共享状态。你的代码不会被用于训练，其他用户无法访问。所有通信都经过端到端加密。"
+          "question": "我可以同时使用多个 AI Agent 吗？",
+          "answer": "目前你可以雇用一个 AI Agent。随着更多 Agent 类型上线 — SEO、营销、调研 — 你将能组建一个完整的 AI Agent 团队。每个 Agent 独立运行，拥有独立的记忆和工作空间。"
         }
       }
     },
@@ -993,7 +993,7 @@
     },
     "calltoaction": {
       "title": "准备好雇佣你的第一个 AI 员工了吗？",
-      "description": "从 AI 程序员开始，更多智能体即将加入团队。",
+      "description": "从 AI 开发者 Agent 开始。更多 AI Agent 即将加入团队。",
       "primaryButton": "立即开始 — $29/月",
       "secondaryButton": "查看定价"
     },
@@ -1020,17 +1020,17 @@
         "item-4": {
           "title": "研究分析师",
           "description": "竞品深度分析、市场调研、用户画像描绘、技术选型评估。交付可执行的研究简报，不只是原始数据。",
-          "tag": "即将上线"
+          "tag": "开发中"
         },
         "item-5": {
           "title": "QA 工程师",
           "description": "编写测试用例、执行自动化测试、复现 Bug、提供修复建议。在用户发现问题之前捕获它们。",
-          "tag": "即将上线"
+          "tag": "开发中"
         },
         "item-6": {
           "title": "项目经理",
           "description": "任务拆解、Sprint 规划、进度追踪、团队协调、风险预警。确保你的项目按时交付。",
-          "tag": "即将上线"
+          "tag": "开发中"
         }
       }
     },
@@ -1041,7 +1041,7 @@
       "steps": {
         "step-1": {
           "title": "订阅并选择",
-          "description": "选择套餐，挑选你需要的 AI 智能体。从 AI 程序员开始——更多智能体即将上线。"
+          "description": "选择套餐，挑选你需要的 AI Agent。从 AI 开发者开始 — 更多专业 Agent 每季度陆续上线。"
         },
         "step-2": {
           "title": "对话描述需求",
@@ -1115,19 +1115,19 @@
   },
   "AIImagePage": {
     "title": "AI 图片",
-    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 提供的 AI 工具 — 雇用 AI Agent 处理开发、调研等工作。"
   },
   "AIChatPage": {
     "title": "AI 聊天",
-    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 提供的 AI 工具 — 雇用 AI Agent 处理开发、调研等工作。"
   },
   "AIVideoPage": {
     "title": "AI 视频",
-    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 提供的 AI 工具 — 雇用 AI Agent 处理开发、调研等工作。"
   },
   "AIAudioPage": {
     "title": "AI 音频",
-    "description": "ClawEmploy 让您在几天内轻松构建您的 AI SaaS，简单且毫不费力"
+    "description": "ClawEmploy 提供的 AI 工具 — 雇用 AI Agent 处理开发、调研等工作。"
   },
   "AgentDashboard": {
     "title": "我的 Agent",

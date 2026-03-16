@@ -2,7 +2,7 @@
   "Metadata": {
     "name": "ClawEmploy",
     "title": "ClawEmploy - Hire AI Experts, Not Headcount",
-    "description": "Pre-configured AI agents for research, SEO, testing & project management. Built on OpenClaw. Pay only for what you use."
+    "description": "Hire pre-configured AI agents for coding, SEO, research, and project management. Your AI developer talks on Telegram and ships code to GitHub. Start from $29/mo."
   },
   "Common": {
     "premium": "Premium",
@@ -46,7 +46,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Choose the plan that works best for you",
+    "description": "Compare AI agent plans. Starter, Pro, and Dedicated tiers with flexible credits. Hire your AI developer from $29/mo.",
     "subtitle": "Choose the plan that works best for you",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -161,7 +161,7 @@
   },
   "AboutPage": {
     "title": "About",
-    "description": "ClawEmploy provides pre-configured AI agents for indie developers and solopreneurs.",
+    "description": "ClawEmploy is an AI agent platform for indie developers and solopreneurs. Hire specialized AI agents to handle coding, SEO, research, and more.",
     "authorName": "ClawEmploy",
     "authorBio": "AI Agents as a Service",
     "introduction": "ClawEmploy is an AI agent platform built for indie developers and solopreneurs. We provide pre-configured expert AI agents that automate your daily work — from market research and SEO to testing and project management. Built on the open-source OpenClaw framework.",
@@ -200,16 +200,16 @@
     }
   },
   "WaitlistPage": {
-    "title": "Waitlist",
-    "description": "Join our waitlist to be first to deploy AI agents",
-    "subtitle": "Join our waitlist to be first to deploy AI agents",
+    "title": "Join the Waitlist",
+    "description": "Limited beta spots available. Join the waitlist to get priority access.",
+    "subtitle": "Limited beta spots available. Join the waitlist to get priority access.",
     "form": {
-      "title": "Join the Waitlist",
-      "description": "Be the first to deploy AI agents that actually get work done",
+      "title": "Reserve Your Spot",
+      "description": "Be among the first to hire an AI developer. Beta spots are limited — early members get priority access and exclusive perks.",
       "email": "Email",
-      "subscribe": "Subscribe",
-      "subscribing": "Subscribing...",
-      "success": "Subscribed successfully",
+      "subscribe": "Join Waitlist",
+      "subscribing": "Joining...",
+      "success": "You are on the list! We will notify you when a spot opens up.",
       "fail": "Failed to subscribe",
       "emailValidation": "Please enter a valid email address"
     }
@@ -382,7 +382,7 @@
           },
           "waitlist": {
             "title": "Waitlist",
-            "description": "Join our waitlist for latest news and updates"
+            "description": "Limited beta spots — join for priority access"
           },
           "changelog": {
             "title": "Changelog",
@@ -811,7 +811,7 @@
     "description": "Pre-configured AI agents for indie developers and solopreneurs",
     "hero": {
       "title": "Hire AI Experts. Not Headcount.",
-      "description": "Pre-configured AI agents for development, research, SEO, and more. Your first hire — an AI developer that talks on Telegram and ships code to GitHub.",
+      "description": "Pre-configured AI agents for development, research, SEO, and more. Your first AI agent hire — a developer that talks on Telegram and ships code to GitHub.",
       "introduction": "Powered by OpenClaw",
       "primary": "Get Started",
       "secondary": "Meet Our Agents"
@@ -864,15 +864,15 @@
       "items": {
         "item-1": {
           "title": "Zero Setup",
-          "description": "No CLI tools to install, no environment to configure. Just open Telegram, describe your task, and your AI developer gets to work."
+          "description": "No CLI tools to install, no environment to configure. Just open Telegram, describe your task, and your AI agent gets to work immediately."
         },
         "item-2": {
           "title": "Persistent Memory",
-          "description": "Your agents remember your projects, preferences, and context. Every interaction builds on the last — like a real team member."
+          "description": "Your AI agents remember your projects, preferences, and context. Every interaction builds on the last — like a real team member who never forgets."
         },
         "item-3": {
           "title": "Multi-Engine",
-          "description": "Automatically selects the best AI engine — Claude Code, Codex, or Gemini — for each task to deliver optimal results."
+          "description": "Each AI agent automatically selects the best coding engine — Claude Code, Codex, or Gemini — for each task to deliver optimal results."
         },
         "item-4": {
           "title": "Secure & Isolated",
@@ -883,7 +883,7 @@
     "features2": {
       "title": "Features2",
       "subtitle": "The features of your product",
-      "description": "Write the description of your product here",
+      "description": "Enterprise-grade tools built into every AI agent",
       "feature-1": "Product Feature One",
       "feature-2": "Product Feature Two",
       "feature-3": "Product Feature Three",
@@ -892,7 +892,7 @@
     "features3": {
       "title": "Features3",
       "subtitle": "The features of your product",
-      "description": "Write the description of your product here",
+      "description": "Everything you need to manage your AI workforce",
       "items": {
         "item-1": {
           "title": "Product Feature One",
@@ -939,15 +939,15 @@
         },
         "item-3": {
           "question": "What about the other agents?",
-          "answer": "We are building a roster of specialized AI agents. SEO Analyst, Research Assistant, Content Writer, QA Engineer, and DevOps Agent are in development. Subscribe to be notified when they launch."
+          "answer": "We are building a roster of specialized AI agents. SEO Specialist, Growth Marketer, Research Analyst, QA Engineer, and Project Manager are in development. Subscribe to be notified when each AI agent launches."
         },
         "item-4": {
           "question": "Is my code and data safe?",
           "answer": "Absolutely. Every agent runs in its own isolated process with dedicated memory and workspace. Your code and conversations are never shared with other users and are never used to train AI models."
         },
         "item-5": {
-          "question": "Is my code secure?",
-          "answer": "Absolutely. Each coding session runs in an isolated process with no shared state. Your code is never used for training and is not accessible to other users. All communication is encrypted end-to-end."
+          "question": "Can I use multiple AI agents at once?",
+          "answer": "Currently you can hire one AI agent at a time. As we launch more agent types — SEO, marketing, research — you will be able to build a full AI agent team. Each agent runs independently with its own memory and workspace."
         }
       }
     },
@@ -993,7 +993,7 @@
     },
     "calltoaction": {
       "title": "Ready to Hire Your First AI Employee?",
-      "description": "Start with the AI Developer. More agents joining the team soon.",
+      "description": "Start with the AI Developer agent. More AI agents joining the team soon.",
       "primaryButton": "Get Started — $29/mo",
       "secondaryButton": "See Pricing"
     },
@@ -1010,27 +1010,27 @@
         "item-2": {
           "title": "SEO Specialist",
           "description": "Not just audits — builds backlinks, optimizes on-page content, submits sitemaps, tracks rankings, and delivers monthly SEO reports. Hands-on execution, not just analysis.",
-          "tag": "Coming Soon"
+          "tag": "Coming Q2"
         },
         "item-3": {
           "title": "Growth Marketer",
           "description": "Writes blog posts and newsletters, manages social media calendars, A/B tests copy, analyzes conversion funnels, and builds acquisition strategies.",
-          "tag": "Coming Soon"
+          "tag": "Coming Q2"
         },
         "item-4": {
           "title": "Research Analyst",
           "description": "Competitor deep-dives, market research, user persona mapping, and tech stack evaluations. Delivers actionable briefs, not just raw data.",
-          "tag": "Coming Soon"
+          "tag": "Coming Q3"
         },
         "item-5": {
           "title": "QA Engineer",
           "description": "Writes test cases, runs automated tests, reproduces bugs, and suggests fixes. Catches issues before your users do.",
-          "tag": "Coming Soon"
+          "tag": "Coming Q3"
         },
         "item-6": {
           "title": "Project Manager",
           "description": "Task breakdown, sprint planning, progress tracking, team coordination, and risk alerts. Keeps your projects shipping on time.",
-          "tag": "Coming Soon"
+          "tag": "Coming Q3"
         }
       }
     },
@@ -1041,7 +1041,7 @@
       "steps": {
         "step-1": {
           "title": "Subscribe & Choose",
-          "description": "Pick a plan and select the AI agents you need. Start with our AI Developer — more agents coming soon."
+          "description": "Pick a plan and select the AI agents you need. Start with our AI Developer — more specialized agents launching quarterly."
         },
         "step-2": {
           "title": "Chat Your Requirements",
@@ -1115,19 +1115,19 @@
   },
   "AIImagePage": {
     "title": "AI Image",
-    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
+    "description": "AI-powered tools by ClawEmploy — hire AI agents for development, research, and more."
   },
   "AIChatPage": {
     "title": "AI Chat",
-    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
+    "description": "AI-powered tools by ClawEmploy — hire AI agents for development, research, and more."
   },
   "AIVideoPage": {
     "title": "AI Video",
-    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
+    "description": "AI-powered tools by ClawEmploy — hire AI agents for development, research, and more."
   },
   "AIAudioPage": {
     "title": "AI Audio",
-    "description": "ClawEmploy lets you make AI SaaS in days, simply and effortlessly"
+    "description": "AI-powered tools by ClawEmploy — hire AI agents for development, research, and more."
   },
   "AgentDashboard": {
     "title": "My Agent",
