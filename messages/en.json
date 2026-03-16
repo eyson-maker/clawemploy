@@ -810,11 +810,11 @@
     "title": "ClawEmploy",
     "description": "Pre-configured AI agents for indie developers and solopreneurs",
     "hero": {
-      "title": "Hire Your AI Developer",
-      "description": "Talk to your AI developer on Telegram. Describe what you need in plain English. Code gets pushed to your GitHub repo. Zero setup required.",
+      "title": "Hire AI Experts. Not Headcount.",
+      "description": "Pre-configured AI agents for development, research, SEO, and more. Your first hire — an AI developer that talks on Telegram and ships code to GitHub.",
       "introduction": "Powered by OpenClaw",
       "primary": "Get Started",
-      "secondary": "See How It Works"
+      "secondary": "Meet Our Agents"
     },
     "logocloud": {
       "title": "Powered by industry-leading AI engines"
@@ -859,24 +859,24 @@
     },
     "features": {
       "title": "Why Choose ClawEmploy?",
-      "subtitle": "Your AI developer that actually ships code",
-      "description": "Not just a chatbot — a developer who understands your project",
+      "subtitle": "AI employees that actually deliver results",
+      "description": "Not just chatbots — specialized agents with real skills",
       "items": {
         "item-1": {
           "title": "Zero Setup",
           "description": "No CLI tools to install, no environment to configure. Just open Telegram, describe your task, and your AI developer gets to work."
         },
         "item-2": {
-          "title": "Project Memory",
-          "description": "Your AI developer remembers your tech stack, coding conventions, and project structure. Every task builds on prior context."
+          "title": "Persistent Memory",
+          "description": "Your agents remember your projects, preferences, and context. Every interaction builds on the last — like a real team member."
         },
         "item-3": {
           "title": "Multi-Engine",
           "description": "Automatically selects the best AI engine — Claude Code, Codex, or Gemini — for each task to deliver optimal results."
         },
         "item-4": {
-          "title": "GitHub Delivery",
-          "description": "Code is pushed directly to your GitHub repository. Review pull requests, merge when ready. Your repo, your control."
+          "title": "Secure & Isolated",
+          "description": "Every agent runs in its own isolated process. Your data, code, and conversations are completely separated from other users."
         }
       }
     },
@@ -931,19 +931,19 @@
       "items": {
         "item-1": {
           "question": "What is ClawEmploy?",
-          "answer": "ClawEmploy is an AI developer subscription service. You subscribe to a plan, connect via Telegram, and describe your programming tasks in plain language. Your AI developer writes the code and pushes it directly to your GitHub repository."
+          "answer": "ClawEmploy is a platform where you hire AI agents as virtual employees. Each agent specializes in a specific role — development, research, SEO, content, and more. Our first available agent is an AI Developer that writes code via Telegram and pushes directly to your GitHub."
         },
         "item-2": {
           "question": "How does the AI write code?",
           "answer": "Under the hood, ClawEmploy uses cloud-based CLI coding engines including Claude Code, Codex, and Gemini. Our smart routing system automatically selects the best engine for each task based on complexity, language, and context."
         },
         "item-3": {
-          "question": "What programming languages are supported?",
-          "answer": "All major programming languages are supported — JavaScript, TypeScript, Python, Go, Rust, Java, C#, Ruby, PHP, Swift, and more. Your AI developer adapts to whatever tech stack your project uses."
+          "question": "What about the other agents?",
+          "answer": "We are building a roster of specialized AI agents. SEO Analyst, Research Assistant, Content Writer, QA Engineer, and DevOps Agent are in development. Subscribe to be notified when they launch."
         },
         "item-4": {
-          "question": "How does pricing work?",
-          "answer": "Each plan includes a monthly Credit allowance. Credits are consumed per task based on complexity. Starter includes 100 Credits ($29/mo), Pro includes 300 Credits ($79/mo), and Dedicated includes 800 Credits ($199/mo). Unused credits do not roll over."
+          "question": "Is my code and data safe?",
+          "answer": "Absolutely. Every agent runs in its own isolated process with dedicated memory and workspace. Your code and conversations are never shared with other users and are never used to train AI models."
         },
         "item-5": {
           "question": "Is my code secure?",
@@ -992,45 +992,45 @@
       }
     },
     "calltoaction": {
-      "title": "Ready to Hire Your AI Developer?",
-      "description": "Start with 100 Credits for just $29/month. No setup. No overhead. Just ship.",
+      "title": "Ready to Hire Your First AI Employee?",
+      "description": "Start with the AI Developer. More agents joining the team soon.",
       "primaryButton": "Get Started — $29/mo",
       "secondaryButton": "See Pricing"
     },
     "agents": {
-      "title": "What Your AI Developer Can Do",
-      "subtitle": "One developer, many capabilities",
-      "description": "From writing code to planning architecture — all through conversation",
+      "title": "Meet Our AI Agents",
+      "subtitle": "Specialized experts, ready to work",
+      "description": "Each agent is built for a specific role. Hire the ones you need.",
       "items": {
         "item-1": {
-          "title": "Code Generation",
-          "description": "From requirements to working code. Automatically selects the best AI engine for each task — Claude Code, Codex, or Gemini.",
-          "tag": "Build"
+          "title": "AI Developer",
+          "description": "Writes code, reviews PRs, designs architecture. Talks on Telegram, ships to GitHub. Powered by Claude Code, Codex & Gemini.",
+          "tag": "Available Now"
         },
         "item-2": {
-          "title": "Code Review",
-          "description": "Reviews code quality, catches security vulnerabilities, and enforces best practices. Get actionable feedback before you merge.",
-          "tag": "Review"
+          "title": "SEO Analyst",
+          "description": "Audits your site, tracks rankings, optimizes content. Technical SEO and keyword strategy on autopilot.",
+          "tag": "Coming Soon"
         },
         "item-3": {
-          "title": "Architecture Design",
-          "description": "System design, API design, and data modeling. Get expert-level architecture recommendations for your project.",
-          "tag": "Design"
+          "title": "Research Assistant",
+          "description": "Deep web research, competitor analysis, market reports. Summarizes findings into actionable briefs.",
+          "tag": "Coming Soon"
         },
         "item-4": {
-          "title": "Bug Fixing",
-          "description": "Pinpoints issues, fixes bugs, and runs regression tests. Describe the problem and get a working fix pushed to your repo.",
-          "tag": "Debug"
+          "title": "Content Writer",
+          "description": "Blog posts, landing page copy, email sequences. Writes in your brand voice with SEO optimization built in.",
+          "tag": "Coming Soon"
         },
         "item-5": {
-          "title": "Documentation",
-          "description": "Auto-generates technical documentation, API docs, and inline comments. Keep your codebase well-documented effortlessly.",
-          "tag": "Docs"
+          "title": "QA Engineer",
+          "description": "Automated testing, bug reproduction, test case generation. Catches issues before your users do.",
+          "tag": "Coming Soon"
         },
         "item-6": {
-          "title": "Task Planning",
-          "description": "Breaks down large requirements into executable task lists. Get a clear roadmap before any code is written.",
-          "tag": "Plan"
+          "title": "DevOps Agent",
+          "description": "CI/CD pipelines, deployment automation, infrastructure monitoring. Keeps your systems running smoothly.",
+          "tag": "Coming Soon"
         }
       }
     },
@@ -1040,16 +1040,16 @@
       "description": "From signup to shipping code in minutes",
       "steps": {
         "step-1": {
-          "title": "Subscribe & Connect",
-          "description": "Choose your plan, connect your Telegram account, and link your GitHub repositories."
+          "title": "Subscribe & Choose",
+          "description": "Pick a plan and select the AI agents you need. Start with our AI Developer — more agents coming soon."
         },
         "step-2": {
           "title": "Chat Your Requirements",
           "description": "Describe your programming task in natural language — just like talking to a real colleague."
         },
         "step-3": {
-          "title": "Code Delivered",
-          "description": "Your AI developer writes the code and pushes it to your GitHub repo. Review, merge, and ship."
+          "title": "Results Delivered",
+          "description": "Your agent completes the work and delivers results. Code goes to GitHub, reports land in your inbox."
         }
       }
     }
