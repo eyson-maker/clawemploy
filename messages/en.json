@@ -1004,32 +1004,32 @@
       "items": {
         "item-1": {
           "title": "AI Developer",
-          "description": "Writes code, reviews PRs, designs architecture. Talks on Telegram, ships to GitHub. Powered by Claude Code, Codex & Gemini.",
+          "description": "Full-stack coding, PR reviews, architecture design, and bug fixes. Talks on Telegram, ships code straight to your GitHub repo. Powered by Claude Code, Codex & Gemini.",
           "tag": "Available Now"
         },
         "item-2": {
-          "title": "SEO Analyst",
-          "description": "Audits your site, tracks rankings, optimizes content. Technical SEO and keyword strategy on autopilot.",
+          "title": "SEO Specialist",
+          "description": "Not just audits — builds backlinks, optimizes on-page content, submits sitemaps, tracks rankings, and delivers monthly SEO reports. Hands-on execution, not just analysis.",
           "tag": "Coming Soon"
         },
         "item-3": {
-          "title": "Research Assistant",
-          "description": "Deep web research, competitor analysis, market reports. Summarizes findings into actionable briefs.",
+          "title": "Growth Marketer",
+          "description": "Writes blog posts and newsletters, manages social media calendars, A/B tests copy, analyzes conversion funnels, and builds acquisition strategies.",
           "tag": "Coming Soon"
         },
         "item-4": {
-          "title": "Content Writer",
-          "description": "Blog posts, landing page copy, email sequences. Writes in your brand voice with SEO optimization built in.",
+          "title": "Research Analyst",
+          "description": "Competitor deep-dives, market research, user persona mapping, and tech stack evaluations. Delivers actionable briefs, not just raw data.",
           "tag": "Coming Soon"
         },
         "item-5": {
           "title": "QA Engineer",
-          "description": "Automated testing, bug reproduction, test case generation. Catches issues before your users do.",
+          "description": "Writes test cases, runs automated tests, reproduces bugs, and suggests fixes. Catches issues before your users do.",
           "tag": "Coming Soon"
         },
         "item-6": {
-          "title": "DevOps Agent",
-          "description": "CI/CD pipelines, deployment automation, infrastructure monitoring. Keeps your systems running smoothly.",
+          "title": "Project Manager",
+          "description": "Task breakdown, sprint planning, progress tracking, team coordination, and risk alerts. Keeps your projects shipping on time.",
           "tag": "Coming Soon"
         }
       }

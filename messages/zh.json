@@ -1004,32 +1004,32 @@
       "items": {
         "item-1": {
           "title": "AI 程序员",
-          "description": "编写代码、审查 PR、设计架构。通过 Telegram 对话，代码交付到 GitHub。由 Claude Code、Codex 和 Gemini 驱动。",
+          "description": "全栈编码、PR 审查、架构设计、Bug 修复。在 Telegram 上对话，代码直接推送到你的 GitHub 仓库。由 Claude Code、Codex 和 Gemini 驱动。",
           "tag": "现已上线"
         },
         "item-2": {
-          "title": "SEO 分析师",
-          "description": "审计网站、追踪排名、优化内容。技术 SEO 和关键词策略自动执行。",
+          "title": "SEO 专家",
+          "description": "不只是审计——建设外链、优化页面内容、提交站点地图、追踪排名、输出月度 SEO 报告。实打实的执行，不只是分析。",
           "tag": "即将上线"
         },
         "item-3": {
-          "title": "研究助手",
-          "description": "深度网络调研、竞品分析、市场报告。将发现总结为可执行的简报。",
+          "title": "增长营销官",
+          "description": "撰写博客和 Newsletter、管理社媒内容日历、A/B 测试文案、分析转化漏斗、制定获客策略。",
           "tag": "即将上线"
         },
         "item-4": {
-          "title": "内容写手",
-          "description": "博客文章、落地页文案、邮件序列。以你的品牌调性写作，内置 SEO 优化。",
+          "title": "研究分析师",
+          "description": "竞品深度分析、市场调研、用户画像描绘、技术选型评估。交付可执行的研究简报，不只是原始数据。",
           "tag": "即将上线"
         },
         "item-5": {
           "title": "QA 工程师",
-          "description": "自动化测试、Bug 复现、测试用例生成。在用户发现之前捕获问题。",
+          "description": "编写测试用例、执行自动化测试、复现 Bug、提供修复建议。在用户发现问题之前捕获它们。",
           "tag": "即将上线"
         },
         "item-6": {
-          "title": "DevOps 智能体",
-          "description": "CI/CD 流水线、部署自动化、基础设施监控。确保系统稳定运行。",
+          "title": "项目经理",
+          "description": "任务拆解、Sprint 规划、进度追踪、团队协调、风险预警。确保你的项目按时交付。",
           "tag": "即将上线"
         }
       }
