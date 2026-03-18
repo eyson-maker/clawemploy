@@ -25,57 +25,53 @@ export function Roadmap() {
   const [columns, setColumns] = React.useState<Record<string, Task[]>>({
     backlog: [
       {
-        id: '1',
-        title: 'Add authentication',
-        priority: 'high',
-        assignee: 'John Doe',
-        dueDate: '2024-04-01',
-      },
-      {
-        id: '2',
-        title: 'Create API endpoints',
+        id: 'growth-marketer-agent',
+        title: 'Growth Marketer Agent',
         priority: 'medium',
-        assignee: 'Jane Smith',
-        dueDate: '2024-04-05',
+        description:
+          'Launch a marketing execution agent for campaign briefs, landing page tests, and distribution checklists.',
+        assignee: 'ClawEmploy Team',
+        dueDate: '2026-09-30',
       },
       {
-        id: '3',
-        title: 'Write documentation',
+        id: 'research-qa-agents',
+        title: 'Research + QA Agents',
+        priority: 'high',
+        description:
+          'Ship paired agents for competitor research, validation runs, and release-quality regression sweeps.',
+        assignee: 'ClawEmploy Team',
+        dueDate: '2026-12-15',
+      },
+      {
+        id: 'project-manager-agent',
+        title: 'Project Manager Agent',
         priority: 'low',
-        assignee: 'Bob Johnson',
-        dueDate: '2024-04-10',
+        description:
+          'Introduce a PM agent that plans milestones, tracks blockers, and coordinates specialist agents across projects.',
+        assignee: 'ClawEmploy Team',
+        dueDate: '2027-03-31',
       },
     ],
     inProgress: [
       {
-        id: '4',
-        title: 'Design system updates',
+        id: 'seo-specialist-agent',
+        title: 'SEO Specialist Agent',
         priority: 'high',
-        assignee: 'Alice Brown',
-        dueDate: '2024-03-28',
-      },
-      {
-        id: '5',
-        title: 'Implement dark mode',
-        priority: 'medium',
-        assignee: 'Charlie Wilson',
-        dueDate: '2024-04-02',
+        description:
+          'Build an SEO agent that audits technical issues, outlines content briefs, and prioritizes ranking opportunities.',
+        assignee: 'ClawEmploy Team',
+        dueDate: '2026-06-30',
       },
     ],
     done: [
       {
-        id: '7',
-        title: 'Setup project',
+        id: 'developer-agent-mvp',
+        title: 'Developer Agent MVP',
         priority: 'high',
-        assignee: 'Eve Davis',
-        dueDate: '2024-03-25',
-      },
-      {
-        id: '8',
-        title: 'Initial commit',
-        priority: 'low',
-        assignee: 'Frank White',
-        dueDate: '2024-03-24',
+        description:
+          'Released the first ClawEmploy agent for Telegram-based software delivery workflows and GitHub task execution.',
+        assignee: 'ClawEmploy Team',
+        dueDate: '2026-03-17',
       },
     ],
   });
@@ -139,6 +135,11 @@ function TaskCard({ task, ...props }: TaskCardProps) {
               {task.priority}
             </Badge>
           </div>
+          {task.description && (
+            <p className="line-clamp-2 text-muted-foreground text-xs">
+              {task.description}
+            </p>
+          )}
           <div className="flex items-center justify-between text-muted-foreground text-xs">
             {task.assignee && (
               <div className="flex items-center gap-1">

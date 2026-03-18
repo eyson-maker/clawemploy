@@ -2,7 +2,9 @@ import { ChartAreaInteractive } from '@/components/dashboard/chart-area-interact
 import { DashboardHeader } from '@/components/dashboard/dashboard-header';
 import { DataTable } from '@/components/dashboard/data-table';
 import { SectionCards } from '@/components/dashboard/section-cards';
+import { LocaleLink } from '@/i18n/navigation';
 import { getSession } from '@/lib/server';
+import { Routes } from '@/routes';
 import { getTranslations } from 'next-intl/server';
 
 import data from './data.json';
@@ -72,37 +74,37 @@ export default async function DashboardPage() {
                 icon="🤖"
                 title="AI Agents"
                 description="Browse and deploy pre-configured AI agents for your projects."
-                href="/"
+                href={Routes.DashboardAgent}
               />
               <QuickActionCard
                 icon="⚙️"
                 title="Settings"
                 description="Update your profile, security, and notification preferences."
-                href="/settings/profile"
+                href={Routes.SettingsProfile}
               />
               <QuickActionCard
-                icon="📚"
-                title="Documentation"
-                description="Learn how to get the most out of ClawEmploy."
-                href="/docs"
+                icon="🆘"
+                title="Need Help?"
+                description="Contact our support team"
+                href={Routes.Contact}
               />
               <QuickActionCard
-                icon="💬"
-                title="Contact Us"
-                description="Have questions? Reach out to our support team."
-                href="/contact"
+                icon="💳"
+                title="Pricing"
+                description="Review plans and buy more credits for your agents."
+                href={Routes.Pricing}
               />
               <QuickActionCard
                 icon="📝"
                 title="Blog"
                 description="Read the latest updates, guides, and AI insights."
-                href="/blog"
+                href={Routes.Blog}
               />
               <QuickActionCard
                 icon="🗺️"
                 title="Roadmap"
                 description="See what's coming next for ClawEmploy."
-                href="/roadmap"
+                href={Routes.Roadmap}
               />
             </div>
           </div>
@@ -124,7 +126,7 @@ function QuickActionCard({
   href: string;
 }) {
   return (
-    <a
+    <LocaleLink
       href={href}
       className="group flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-xs transition-all hover:border-primary/30 hover:shadow-md"
     >
@@ -135,6 +137,6 @@ function QuickActionCard({
         </h3>
       </div>
       <p className="text-sm text-muted-foreground">{description}</p>
-    </a>
+    </LocaleLink>
   );
 }

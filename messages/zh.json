@@ -776,6 +776,9 @@
       "title": "升级",
       "description": "升级到Pro以获取所有功能",
       "button": "升级"
+    },
+    "agent": {
+      "title": "我的 Agent"
     }
   },
   "Mail": {
@@ -1057,10 +1060,26 @@
       "title": "你的代码，你掌控",
       "subtitle": "每个套餐都享有企业级安全保障",
       "items": {
-        "item-1": { "icon": "shield", "title": "进程级隔离", "description": "每个 Agent 运行在独立进程中，拥有专属工作区和记忆。用户间数据完全隔离。" },
-        "item-2": { "icon": "lock", "title": "加密存储", "description": "所有 Token、API Key 和敏感数据采用 AES-256 加密存储。零明文存储。" },
-        "item-3": { "icon": "eye", "title": "完整审计日志", "description": "Agent 的每一个操作都有记录。随时查看修改了什么、何时修改、为何修改。" },
-        "item-4": { "icon": "key", "title": "数据归你所有", "description": "代码留在你的 GitHub 仓库。删除账号即清除所有 Agent 记忆。无锁定。" }
+        "item-1": {
+          "icon": "shield",
+          "title": "进程级隔离",
+          "description": "每个 Agent 运行在独立进程中，拥有专属工作区和记忆。用户间数据完全隔离。"
+        },
+        "item-2": {
+          "icon": "lock",
+          "title": "加密存储",
+          "description": "所有 Token、API Key 和敏感数据采用 AES-256 加密存储。零明文存储。"
+        },
+        "item-3": {
+          "icon": "eye",
+          "title": "完整审计日志",
+          "description": "Agent 的每一个操作都有记录。随时查看修改了什么、何时修改、为何修改。"
+        },
+        "item-4": {
+          "icon": "key",
+          "title": "数据归你所有",
+          "description": "代码留在你的 GitHub 仓库。删除账号即清除所有 Agent 记忆。无锁定。"
+        }
       }
     }
   },
@@ -1133,20 +1152,56 @@
     "title": "我的 Agent",
     "noAgent": "你还没有雇用 Agent",
     "getStarted": "雇用你的 Agent",
+    "setupStep1": "Agent 已创建",
+    "setupStep2": "配置 Telegram",
+    "setupStep3": "发送第一个任务",
+    "configureTelegram": "配置 Telegram",
+    "botTokenLabel": "Bot Token",
+    "botTokenPlaceholder": "123456789:AAExampleBotToken",
+    "botTokenInstructions": "粘贴从 BotFather 获取的 Bot Token，将你的 Agent 连接到 Telegram。",
+    "botTokenRequired": "请输入 Telegram Bot Token 以继续。",
+    "botTokenInvalid": "请输入有效的 Telegram Bot Token，格式如 123456789:AAExampleBotToken。",
+    "configureError": "暂时无法完成 Telegram 配置，请稍后再试。",
+    "saveAndConnect": "保存并连接",
+    "openTelegram": "打开 Telegram",
+    "firstTaskHint": "在 Telegram 中打开这个机器人并发送你的第一个任务，即可开始使用。",
+    "agentReady": "你的 Agent 已就绪",
+    "telegramBot": "Telegram 机器人",
+    "telegramRequired": "完成 Telegram 设置后，Agent 才能接收任务。",
+    "connected": "已连接",
+    "noCreditsCta": "先购买 Credits，才能雇用你的第一个 AI Agent。",
+    "hasCreditsReady": "你已有可用 Credits，现在就雇用你的 Agent 吧。",
+    "botFatherStep1": "打开 Telegram，并开始与 @BotFather 对话。",
+    "botFatherStep2": "发送 /newbot，并按照提示创建机器人。",
+    "botFatherStep3": "复制 BotFather 返回给你的 Bot Token。",
+    "botFatherStep4": "将 Token 粘贴到下方，把它连接到这个 Agent。",
+    "botFatherStep5": "保存连接后，打开 Telegram 并发送你的第一个任务。",
     "status": "状态",
     "plan": "套餐",
     "channel": "渠道",
     "credits": "Credits",
-    "status.active": "运行中",
-    "status.sleeping": "休眠中",
-    "status.pending": "准备中",
-    "status.terminated": "已终止",
+    "statusActive": "运行中",
+    "statusSleeping": "休眠中",
+    "statusPending": "准备中",
+    "statusTerminated": "已终止",
     "recentTasks": "最近任务",
     "noTasks": "暂无任务",
     "projects": "项目",
     "noProjects": "暂无项目",
     "creditsUsed": "已用 Credits",
-    "tasksCompleted": "已完成任务"
+    "tasksCompleted": "已完成任务",
+    "sleep": "休眠",
+    "wake": "唤醒",
+    "terminate": "终止",
+    "confirmTerminate": "确定要终止此 Agent 吗？",
+    "terminateDescription": "这将永久删除你的 Agent 及所有关联数据。此操作不可撤销。",
+    "processing": "处理中...",
+    "creditsRemaining": "剩余 Credits",
+    "lastActive": "最后活跃",
+    "actions": "操作",
+    "buyCredits": "购买积分",
+    "hireAnother": "再雇一个 Agent",
+    "pausedInsufficientCredits": "已暂停 — 积分不足"
   },
   "Credits": {
     "dailyLimit": {

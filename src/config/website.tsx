@@ -102,7 +102,7 @@ export const websiteConfig: WebsiteConfig = {
           {
             type: PaymentTypes.SUBSCRIPTION,
             priceId: 'prod_starter_monthly',
-            amount: 29,
+            amount: 2900,
             currency: 'USD',
             interval: PlanIntervals.MONTH,
           },
@@ -121,7 +121,7 @@ export const websiteConfig: WebsiteConfig = {
           {
             type: PaymentTypes.SUBSCRIPTION,
             priceId: 'prod_pro_monthly',
-            amount: 79,
+            amount: 7900,
             currency: 'USD',
             interval: PlanIntervals.MONTH,
           },
@@ -141,7 +141,7 @@ export const websiteConfig: WebsiteConfig = {
           {
             type: PaymentTypes.SUBSCRIPTION,
             priceId: 'prod_dedicated_monthly',
-            amount: 199,
+            amount: 19900,
             currency: 'USD',
             interval: PlanIntervals.MONTH,
           },
@@ -170,7 +170,7 @@ export const websiteConfig: WebsiteConfig = {
         amount: 50,
         price: {
           priceId: 'prod_credits_basic',
-          amount: 9,
+          amount: 900,
           currency: 'USD',
         },
         popular: false,
@@ -180,7 +180,7 @@ export const websiteConfig: WebsiteConfig = {
         amount: 150,
         price: {
           priceId: 'prod_credits_standard',
-          amount: 19,
+          amount: 1900,
           currency: 'USD',
         },
         popular: false,
@@ -190,7 +190,7 @@ export const websiteConfig: WebsiteConfig = {
         amount: 500,
         price: {
           priceId: 'prod_credits_premium',
-          amount: 49,
+          amount: 4900,
           currency: 'USD',
         },
         popular: true,

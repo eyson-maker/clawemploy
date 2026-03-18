@@ -7,6 +7,145 @@ import { addDays, isAfter } from 'date-fns';
 import { and, asc, eq, gt, isNull, not, or, sql } from 'drizzle-orm';
 import { CREDIT_TRANSACTION_TYPE } from './types';
 
+type DatabaseClient = Awaited<ReturnType<typeof getDb>>;
+type TransactionClient = Parameters<Parameters<DatabaseClient['transaction']>[0]>[0];
+type CreditDbClient = DatabaseClient | TransactionClient;
+
+function assertValidCreditConsumption({
+  userId,
+  amount,
+  description,
+}: {
+  userId: string;
+  amount: number;
+  description: string;
+}) {
+  if (!userId || !description) {
+    console.error('consumeCredits, invalid params', userId, description);
+    throw new Error('Invalid params');
+  }
+
+  if (!Number.isFinite(amount) || amount <= 0) {
+    console.error('consumeCredits, invalid amount', userId, amount);
+    throw new Error('Invalid amount');
+  }
+}
+
+async function consumeCreditsWithClient(
+  db: CreditDbClient,
+  {
+    userId,
+    amount,
+    description,
+  }: {
+    userId: string;
+    amount: number;
+    description: string;
+  }
+) {
+  const now = new Date();
+  const current = await db
+    .select({ currentCredits: userCredit.currentCredits })
+    .from(userCredit)
+    .where(eq(userCredit.userId, userId))
+    .limit(1)
+    .for('update');
+
+  const currentBalance = current[0]?.currentCredits || 0;
+
+  if (currentBalance < amount) {
+    console.error(
+      `consumeCredits, insufficient credits for user ${userId}, required: ${amount}`
+    );
+    throw new Error('Insufficient credits');
+  }
+
+  const transactions = await db
+    .select({
+      id: creditTransaction.id,
+      remainingAmount: creditTransaction.remainingAmount,
+    })
+    .from(creditTransaction)
+    .where(
+      and(
+        eq(creditTransaction.userId, userId),
+        not(eq(creditTransaction.type, CREDIT_TRANSACTION_TYPE.USAGE)),
+        not(eq(creditTransaction.type, CREDIT_TRANSACTION_TYPE.EXPIRE)),
+        gt(creditTransaction.remainingAmount, 0),
+        or(
+          isNull(creditTransaction.expirationDate),
+          gt(creditTransaction.expirationDate, now)
+        )
+      )
+    )
+    .orderBy(
+      sql`${creditTransaction.expirationDate} asc nulls last`,
+      asc(creditTransaction.createdAt)
+    )
+    .for('update');
+
+  let remainingToDeduct = amount;
+
+  for (const transaction of transactions) {
+    if (remainingToDeduct <= 0) {
+      break;
+    }
+
+    const remainingAmount = transaction.remainingAmount || 0;
+    if (remainingAmount <= 0) {
+      continue;
+    }
+
+    const deductFromThis = Math.min(remainingAmount, remainingToDeduct);
+    await db
+      .update(creditTransaction)
+      .set({
+        remainingAmount: remainingAmount - deductFromThis,
+        updatedAt: now,
+      })
+      .where(eq(creditTransaction.id, transaction.id));
+    remainingToDeduct -= deductFromThis;
+  }
+
+  if (remainingToDeduct > 0) {
+    console.error(
+      `consumeCredits, remaining credits could not be deducted for user ${userId}, missing: ${remainingToDeduct}`
+    );
+    throw new Error('Insufficient credits');
+  }
+
+  await db
+    .update(userCredit)
+    .set({
+      currentCredits: currentBalance - amount,
+      updatedAt: now,
+    })
+    .where(eq(userCredit.userId, userId));
+
+  await db.insert(creditTransaction).values({
+    id: randomUUID(),
+    userId,
+    type: CREDIT_TRANSACTION_TYPE.USAGE,
+    amount: -amount,
+    remainingAmount: null,
+    description,
+    createdAt: now,
+    updatedAt: now,
+  });
+}
+
+export async function consumeCreditsInTransaction(
+  db: TransactionClient,
+  params: {
+    userId: string;
+    amount: number;
+    description: string;
+  }
+) {
+  assertValidCreditConsumption(params);
+  await consumeCreditsWithClient(db, params);
+}
+
 /**
  * Get user's current credit balance
  * @param userId - User ID
@@ -201,80 +340,15 @@ export async function consumeCredits({
   amount: number;
   description: string;
 }) {
-  if (!userId || !description) {
-    console.error('consumeCredits, invalid params', userId, description);
-    throw new Error('Invalid params');
-  }
-  if (!Number.isFinite(amount) || amount <= 0) {
-    console.error('consumeCredits, invalid amount', userId, amount);
-    throw new Error('Invalid amount');
-  }
-  // Check balance
-  if (!(await hasEnoughCredits({ userId, requiredCredits: amount }))) {
-    console.error(
-      `consumeCredits, insufficient credits for user ${userId}, required: ${amount}`
-    );
-    throw new Error('Insufficient credits');
-  }
-  // FIFO consumption: consume from the earliest unexpired credits first
+  assertValidCreditConsumption({ userId, amount, description });
+
   const db = await getDb();
-  const now = new Date();
-  const transactions = await db
-    .select()
-    .from(creditTransaction)
-    .where(
-      and(
-        eq(creditTransaction.userId, userId),
-        // Exclude usage and expire records (these are consumption/expiration logs)
-        not(eq(creditTransaction.type, CREDIT_TRANSACTION_TYPE.USAGE)),
-        not(eq(creditTransaction.type, CREDIT_TRANSACTION_TYPE.EXPIRE)),
-        // Only include transactions with remaining amount > 0
-        gt(creditTransaction.remainingAmount, 0),
-        // Only include unexpired credits (either no expiration date or not yet expired)
-        or(
-          isNull(creditTransaction.expirationDate),
-          gt(creditTransaction.expirationDate, now)
-        )
-      )
-    )
-    .orderBy(
-      asc(creditTransaction.expirationDate),
-      asc(creditTransaction.createdAt)
-    );
-  // Consume credits
-  let remainingToDeduct = amount;
-  for (const transaction of transactions) {
-    if (remainingToDeduct <= 0) break;
-    const remainingAmount = transaction.remainingAmount || 0;
-    if (remainingAmount <= 0) continue;
-    // credits to consume at most in this transaction
-    const deductFromThis = Math.min(remainingAmount, remainingToDeduct);
-    await db
-      .update(creditTransaction)
-      .set({
-        remainingAmount: remainingAmount - deductFromThis,
-        updatedAt: new Date(),
-      })
-      .where(eq(creditTransaction.id, transaction.id));
-    remainingToDeduct -= deductFromThis;
-  }
-  // Update balance
-  const current = await db
-    .select()
-    .from(userCredit)
-    .where(eq(userCredit.userId, userId))
-    .limit(1);
-  const newBalance = (current[0]?.currentCredits || 0) - amount;
-  await db
-    .update(userCredit)
-    .set({ currentCredits: newBalance, updatedAt: new Date() })
-    .where(eq(userCredit.userId, userId));
-  // Write usage record
-  await saveCreditTransaction({
-    userId,
-    type: CREDIT_TRANSACTION_TYPE.USAGE,
-    amount: -amount,
-    description,
+  await db.transaction(async (tx) => {
+    await consumeCreditsWithClient(tx, {
+      userId,
+      amount,
+      description,
+    });
   });
 }
 
