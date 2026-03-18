@@ -159,7 +159,7 @@ function MainMobileMenu({ userLoggedIn, onLinkClicked }: MainMobileMenuProps) {
         {userLoggedIn ? null : (
           <div className="w-full flex flex-col gap-4 px-4">
             <LocaleLink
-              href={Routes.Login}
+              href={Routes.Waitlist}
               onClick={onLinkClicked}
               className={cn(
                 buttonVariants({
@@ -172,7 +172,7 @@ function MainMobileMenu({ userLoggedIn, onLinkClicked }: MainMobileMenuProps) {
               {t('Common.login')}
             </LocaleLink>
             <LocaleLink
-              href={Routes.Register}
+              href={Routes.Waitlist}
               className={cn(
                 buttonVariants({
                   variant: 'default',

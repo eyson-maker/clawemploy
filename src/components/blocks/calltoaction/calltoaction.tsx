@@ -29,7 +29,7 @@ export default function CallToActionSection() {
               size="lg"
               className="rounded-xl bg-indigo-600 px-10 py-3 text-base font-semibold text-white shadow-lg shadow-indigo-600/25 hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-600/30 transition-all duration-300"
             >
-              <LocaleLink href="/auth/register">
+              <LocaleLink href="/waitlist">
                 <span>{t('primaryButton')}</span>
               </LocaleLink>
             </Button>

@@ -23,7 +23,6 @@ import {
 } from '@/payment/types';
 import { CheckCircleIcon, XCircleIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { LoginWrapper } from '../auth/login-wrapper';
 import { Badge } from '../ui/badge';
 import { CheckoutButton } from './create-checkout-button';
 
@@ -159,17 +158,9 @@ export function PricingCard({
 
         {/* show action buttons based on plans */}
         {plan.isFree ? (
-          mounted && currentUser ? (
-            <Button variant="outline" className="mt-4 w-full disabled">
-              {t('getStartedForFree')}
-            </Button>
-          ) : (
-            <LoginWrapper mode="modal" asChild callbackUrl={currentPath}>
-              <Button variant="outline" className="mt-4 w-full cursor-pointer">
-                {t('getStartedForFree')}
-              </Button>
-            </LoginWrapper>
-          )
+          <Button variant="outline" className="mt-4 w-full" disabled>
+            {t('getStartedForFree')}
+          </Button>
         ) : isCurrentPlan ? (
           <Button
             disabled
@@ -179,23 +170,9 @@ export function PricingCard({
             {t('yourCurrentPlan')}
           </Button>
         ) : isPaidPlan ? (
-          mounted && currentUser ? (
-            <CheckoutButton
-              userId={currentUser.id}
-              planId={plan.id}
-              priceId={price.priceId}
-              metadata={metadata}
-              className="mt-4 w-full cursor-pointer"
-            >
-              {plan.isLifetime ? t('getLifetimeAccess') : t('getStarted')}
-            </CheckoutButton>
-          ) : (
-            <LoginWrapper mode="modal" asChild callbackUrl={currentPath}>
-              <Button variant="default" className="mt-4 w-full cursor-pointer">
-                {t('getStarted')}
-              </Button>
-            </LoginWrapper>
-          )
+          <Button disabled className="mt-4 w-full">
+            {t('getStarted')}
+          </Button>
         ) : (
           <Button disabled className="mt-4 w-full">
             {t('notAvailable')}
